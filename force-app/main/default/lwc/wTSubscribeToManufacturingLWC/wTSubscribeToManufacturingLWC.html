@@ -1,0 +1,59 @@
+<template>
+    <!-- world tour Sydney-->
+    <lightning-card title="Platform Events">
+        <div class="c-container">
+            <lightning-layout>
+                <lightning-layout-item>
+                    <div
+                        class="custom-box slds-box slds-var-p-around_medium slds-text-align_center"
+                    >
+                        <lightning-input
+                            label="Subscribe to Manufacturing Events"
+                            type="checkbox"
+                            onchange={handleSubscribeChange}
+                        >
+                        </lightning-input>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+    <template if:true={subscribed}>
+        <lightning-card>
+            <div class="c-container">
+                <div
+                    class="custom-box slds-box slds-var-p-around_medium slds-text-align_center"
+                >
+                    <template if:true={messageReceived}>
+                        <div
+                            class="demo-only"
+                            style="padding: 0.5rem; background: #745a9b"
+                        >
+                            <div class="slds-text-color_inverse">
+                                {messageVar}
+                            </div>
+                        </div>
+                        <br /><br />
+                        <button
+                            class="slds-button slds-button_neutral"
+                            onclick={clearMessage}
+                            title="Reset"
+                        >
+                            Reset
+                        </button>
+                    </template>
+
+                    <template if:false={messageReceived}>
+                        <div>{messageVar}</div>
+                        <div class="exampleHolder">
+                            <lightning-spinner
+                                alternative-text="Loading"
+                                size="medium"
+                            ></lightning-spinner>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+</template>

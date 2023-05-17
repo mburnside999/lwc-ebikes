@@ -10,7 +10,8 @@
             "BillingCity": "Belmont",
             "BillingState": "MA",
             "BillingPostalCode": "02478",
-            "BillingCountry": "USA"
+            "BillingCountry": "USA",
+            "ebikesaws__ExtAccountId__c":"111"
         },
         {
             "attributes": {
@@ -22,7 +23,9 @@
             "BillingCity": "San Francisco",
             "BillingState": "CA",
             "BillingPostalCode": "94105",
-            "BillingCountry": "USA"
+            "BillingCountry": "USA",
+            "ebikesaws__ExtAccountId__c":"222"
+
         },
         {
             "attributes": {
@@ -34,7 +37,9 @@
             "BillingCity": "New York",
             "BillingState": "NY",
             "BillingPostalCode": "10036",
-            "BillingCountry": "USA"
+            "BillingCountry": "USA",
+            "ebikesaws__ExtAccountId__c":"333"
+
         }
     ]
 }

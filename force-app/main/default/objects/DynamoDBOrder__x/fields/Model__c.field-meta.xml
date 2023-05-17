@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Model__c</fullName>
+    <externalDeveloperName>Model</externalDeveloperName>
+    <externalId>false</externalId>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Model</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FLYING-BIKE-S3</fullName>
+                <default>false</default>
+                <label>FLYING-BIKE-S3</label>
+            </value>
+            <value>
+                <fullName>WATER-BIKE-A4</fullName>
+                <default>false</default>
+                <label>WATER-BIKE-A4</label>
+            </value>
+            <value>
+                <fullName>SPACE-BIKE-S1</fullName>
+                <default>false</default>
+                <label>SPACE-BIKE-S1</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

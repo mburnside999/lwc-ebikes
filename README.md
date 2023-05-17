@@ -68,6 +68,7 @@ E-Bikes is a sample application that demonstrates how to build applications with
 
     ```
     sfdx force:user:permset:assign -n ebikes
+
     ```
 
 1. Assign the **Walkthroughs** permission set to the default user:
