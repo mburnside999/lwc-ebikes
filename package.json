@@ -48,7 +48,7 @@
         "@salesforce/sfdx-lwc-jest": "^1.2.1",
         "@wdio/cli": "^8.3.5",
         "@wdio/jasmine-framework": "^8.3.5",
-        "@wdio/local-runner": "^8.3.5",
+        "@wdio/local-runner": "^8.10.5",
         "@wdio/spec-reporter": "^8.3.0",
         "chromedriver": "^109.0.0",
         "dotenv": "^16.0.3",
