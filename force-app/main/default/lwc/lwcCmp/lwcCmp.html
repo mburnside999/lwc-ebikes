@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="LWC" icon-name="utility:animal_and_nature">
+        <!--<h3 class='green'>I'm a Salesforce LWC</h3>-->
+
+
+        <lightning-button
+            label="Say Hi to this LWC component!"
+            variant="brand"
+            onclick={userSaysHi}
+            slot="actions"
+        ></lightning-button>
+        <div class="slds-box">
+            <p class="message">Messages: {msg}</p>
+        </div>
+    </lightning-card>
+    <lightning-card>
+        <c-lwc-account-list></c-lwc-account-list>
+    </lightning-card>
+</template>

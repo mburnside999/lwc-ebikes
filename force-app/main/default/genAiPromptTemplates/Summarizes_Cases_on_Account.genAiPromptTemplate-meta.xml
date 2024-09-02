@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>1</activeVersion>
+    <description>Generate a summary of open cases for an account</description>
+    <developerName>Summarizes_Cases_on_Account</developerName>
+    <masterLabel>Summarizes Cases on Account</masterLabel>
+    <relatedEntity>Account</relatedEntity>
+    <relatedField>Account.Open_Case_Summary__c</relatedField>
+    <templateVersions>
+        <content>You’re a support representative, and you need to create a short summary of all open cases for account {!$Input:Account.Name} no longer than 500 characters. 
+
+Summarize the open cases in one paragraph no longer than 500 characters. 
+
+Mention how many open cases there are and what the case issues are. 
+
+Use the following information to write the summary: 
+{!$Flow:Get_Open_Cases_for_Account.Prompt}
+
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>flow://Get_Open_Cases_for_Account</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Get_Open_Cases_for_Account</referenceName>
+        </templateDataProviders>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You’re a support representative, and you need to create a short summary of all open cases for account {!$Input:Account.Name} no longer than 500 characters. 
+
+Summarize the open cases in one paragraph no longer than 500 characters. 
+
+Mention how many open cases there are and what the case issues are. 
+
+Use the following information to write the summary: 
+{!$Flow:Get_Open_Cases_for_Account.Prompt}
+
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Account</definition>
+            <referenceName>Input:Account</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>flow://Get_Open_Cases_for_Account</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>RelatedEntity</parameterName>
+                <valueExpression>{!$Input:Account}</valueExpression>
+            </parameters>
+            <referenceName>Flow:Get_Open_Cases_for_Account</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

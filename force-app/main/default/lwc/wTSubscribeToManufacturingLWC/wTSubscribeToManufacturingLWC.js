@@ -75,6 +75,6 @@ export default class WTSubscribeToOrderChangeLWC extends LightningElement {
         // }
         this.messageVar = 'Listening for Manufacturing Update events...';
         this.messageReceived = false;
-        this.subscribed = false;
+        //this.subscribed = false;
     }
 }

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>2</activeVersion>
+    <developerName>Sales_Handover</developerName>
+    <masterLabel>Sales Handover</masterLabel>
+    <templateVersions>
+        <content>you need to write a professional sales handover document in the voice of a seasoned sales manager using the instructions below, in the language that sales people understand.
+
+instructions:
+&quot;&quot;&quot;
+write a paragraph to your sales team describing best practices for sales handovers and remind your sales people to log their activities in Salesforce
+write a brief for a sales handover including the data from 
+
+remind the sales people how important re-discovery is and the assistance that sales engineering can provide
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>account_1</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>account 1</masterLabel>
+            <referenceName>Input:account_1</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>account_2</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>account 2</masterLabel>
+            <referenceName>Input:account_2</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>case_1</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>case 1</masterLabel>
+            <referenceName>Input:case_1</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>you need to write a professional sales handover document in the voice of a seasoned sales manager using the instructions below, in the language that sales people understand.
+
+instructions:
+&quot;&quot;&quot;
+write a paragraph to your sales team describing best practices for sales handovers and remind your sales people to log their activities in Salesforce
+write a brief for a sales handover including the data from 
+{!$Apex:ApexFlexTemplateSalesHandover.Prompt}
+remind the sales people how important re-discovery is and the assistance that sales engineering can provide
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>account_1</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>account 1</masterLabel>
+            <referenceName>Input:account_1</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>account_2</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>account 2</masterLabel>
+            <referenceName>Input:account_2</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>case_1</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>case 1</masterLabel>
+            <referenceName>Input:case_1</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://ApexFlexTemplateSalesHandover</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>account_1</parameterName>
+                <valueExpression>{!$Input:account_1}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>account_2</parameterName>
+                <valueExpression>{!$Input:account_2}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>SOBJECT://Case</definition>
+                <isRequired>true</isRequired>
+                <parameterName>case_1</parameterName>
+                <valueExpression>{!$Input:case_1}</valueExpression>
+            </parameters>
+            <referenceName>Apex:ApexFlexTemplateSalesHandover</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>you need to write a professional sales handover document in the voice of a seasoned sales manager using the instructions below, in the language that sales people understand.
+
+instructions:
+&quot;&quot;&quot;
+write a paragraph to your sales team describing best practices for sales handovers and remind your sales people to log their activities in Salesforce
+write a brief for a sales handover including the data from 
+{!$Apex:ApexFlexTemplateSalesHandover.Prompt}
+remind the sales people how important re-discovery is and the assistance that technical architects can provide
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>account_1</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>account 1</masterLabel>
+            <referenceName>Input:account_1</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>account_2</apiName>
+            <definition>SOBJECT://Account</definition>
+            <masterLabel>account 2</masterLabel>
+            <referenceName>Input:account_2</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>case_1</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>case 1</masterLabel>
+            <referenceName>Input:case_1</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>apex://ApexFlexTemplateSalesHandover</definition>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>account_1</parameterName>
+                <valueExpression>{!$Input:account_1}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>SOBJECT://Account</definition>
+                <isRequired>true</isRequired>
+                <parameterName>account_2</parameterName>
+                <valueExpression>{!$Input:account_2}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>SOBJECT://Case</definition>
+                <isRequired>true</isRequired>
+                <parameterName>case_1</parameterName>
+                <valueExpression>{!$Input:case_1}</valueExpression>
+            </parameters>
+            <referenceName>Apex:ApexFlexTemplateSalesHandover</referenceName>
+        </templateDataProviders>
+        <versionNumber>3</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

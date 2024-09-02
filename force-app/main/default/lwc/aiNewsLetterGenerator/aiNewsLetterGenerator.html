@@ -1,0 +1,66 @@
+<template>
+    <lightning-card icon-name="standard:article" variant="base">
+        <div slot="title">Generate Newsletter</div>
+        <div class="slds-var-m-around_medium">
+            <lightning-record-picker
+                label="Search Bikes"
+                placeholder="Search Bikes..."
+                object-api-name="Product__c"
+                onchange={handleChange}
+            >
+            </lightning-record-picker>
+        </div>
+        <lightning-button
+            variant="brand"
+            label="Generate Newsletter"
+            onclick={handleClick}
+            class="slds-align_absolute-center"
+        ></lightning-button>
+    </lightning-card>
+    <div class="spinner">
+        <template lwc:if={isLoading}>
+            <lightning-spinner
+                alternative-text="Loading"
+                variant="brand"
+                size="large"
+            >
+            </lightning-spinner>
+        </template>
+    </div>
+    <template lwc:if={isLetterGenerated}>
+        <template lwc:if={isLetterGenerated}>
+            <lightning-card variant="base">
+                <div slot="title">AI Generated Newsletter Preview</div>
+                <lightning-layout multiple-rows>
+                    <lightning-layout-item padding="around-small" size="12">
+                        <div>
+                            <lightning-input
+                                type="toggle"
+                                label="Preview"
+                                class="slds-float_left"
+                                onchange={handleToggleChange}
+                            >
+                            </lightning-input>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="12">
+                        <template lwc:if={isPreview}>
+                            <div>
+                                <lightning-formatted-rich-text
+                                    value={newsLetterBody}
+                                ></lightning-formatted-rich-text>
+                            </div>
+                        </template>
+                        <template lwc:else>
+                            <div>
+                                <lightning-input-rich-text
+                                    value={newsLetterBody}
+                                ></lightning-input-rich-text>
+                            </div>
+                        </template>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-card>
+        </template>
+    </template>
+</template>

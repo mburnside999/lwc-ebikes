@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>3</activeVersion>
+    <developerName>Bike_Summary</developerName>
+    <masterLabel>Bike Summary</masterLabel>
+    <relatedEntity>Product__c</relatedEntity>
+    <templateVersions>
+        <content>help me understand the products we sell, like the {!$Input:Product__c.Id}
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <referenceName>Input:Product__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>help me understand the products we sell
+user the following information to summarise the product
+ {!$Input:Product__c.Id}
+{!$Input:Product__c.Battery__c}
+{!$Input:Product__c.Fork__c}
+{!$Input:Product__c.Motor__c}
+{!$Input:Product__c.AI_Generated_Customer_Feedback__c}
+{!$Input:Product__c.Description__c}
+
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <referenceName>Input:Product__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>help me understand the products we sell
+user the following information to summarise the product
+{!$Input:Product__c.Id}
+{!$Input:Product__c.Battery__c}
+{!$Input:Product__c.Fork__c}
+{!$Input:Product__c.Motor__c}
+{!$Input:Product__c.AI_Generated_Customer_Feedback__c}
+{!$Input:Product__c.Description__c}
+
+</content>
+        <inputs>
+            <apiName>objectToSummarize</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <referenceName>Input:Product__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>3</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__recordSummary</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

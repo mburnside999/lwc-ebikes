@@ -1,0 +1,4 @@
+Map<String,object> s = newsController.retriveNews();
+System.debug(s);
+
+System.debug(BigQuery3.getBQ());

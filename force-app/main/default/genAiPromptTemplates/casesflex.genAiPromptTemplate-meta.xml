@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>1</activeVersion>
+    <developerName>casesflex</developerName>
+    <masterLabel>casesflex</masterLabel>
+    <templateVersions>
+        <content>You’re a Customer Service Agent and your name is {!$User.FirstName} from Ursa Major Solar. Your recipient is {!$Input:case.Contact.Name}
+You’re following up with a customer to ask more about a problem with their order. 
+When I ask you to generate a text message, you must strictly follow my instructions below.
+
+Instructions:
+&quot;&quot;&quot;
+Generate a text message. It must be no longer than 60 words.
+Use clear, concise, and straightforward language using the active voice and strictly avoiding the use of filler words and phrases and redundant language.
+Add the following information to the text message {!$Input:case.Description}. {!$Input:case.Reason}
+Ask the customer to confirm that this information is accurate.  
+End the text by offering to assist the customer now.
+&quot;&quot;&quot;
+
+Now generate the text message to your contact.
+
+</content>
+        <inputs>
+            <apiName>case</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>case</masterLabel>
+            <referenceName>Input:case</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

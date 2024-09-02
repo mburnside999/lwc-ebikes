@@ -1,0 +1,16 @@
+<template>
+    <lightning-card
+        title="Google BiqQuery - Wikipedia Page Views"
+        icon-name="custom:custom14"
+    >
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+                key-field="id"
+                data={result.data}
+                columns={columns}
+                hide-checkbox-column="true"
+            >
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

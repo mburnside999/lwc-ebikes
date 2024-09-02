@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>1</activeVersion>
+    <description>Test</description>
+    <developerName>Generate_Knowledge</developerName>
+    <masterLabel>Generate Knowledge</masterLabel>
+    <templateVersions>
+        <content>Based on this call transcript, generate a knowledge article with a step by step guidance on how to solve this issue.
+
+CSR: Thank you for calling Valiant Bank Customer Service. How can I assist you today?
+Alex: Hi, I&apos;m having trouble logging into the My Money Centre app. It keeps saying my credentials are invalid.
+CSR: I see. Can I have your name and account details to assist you further?
+Alex: My name is Alex Johnson, and I recently received my credit card.
+CSR: Thank you, Alex. It seems your account might be temporarily locked due to multiple unsuccessful login attempts. Did you receive a temporary password via email that you needed to concatenate with your birthday?
+Alex: Oh, I didn&apos;t notice that instruction. I just tried using the password provided.
+CSR: That&apos;s okay. Let&apos;s proceed with resetting your access. I&apos;ll guide you through it.
+Alex: Okay, thank you.
+CSR: First, please reset your password using the temporary one sent to your email. After that, concatenate it with your birthday as instructed.
+Alex: Done. Now I&apos;m entering the concatenated password.
+CSR: Perfect. You should be able to log in now.
+Alex: It worked! I&apos;m in. Thank you so much for your help.
+CSR: You&apos;re welcome, Alex. Is there anything else I can assist you with today?
+Alex: No, that should be all. Thanks again!
+CSR: You&apos;re welcome. Have a great day, Alex!
+Alex: You too. Goodbye!
+CSR: Goodbye.
+</content>
+        <inputs>
+            <apiName>Case</apiName>
+            <definition>SOBJECT://Case</definition>
+            <masterLabel>Case</masterLabel>
+            <referenceName>Input:Case</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

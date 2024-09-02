@@ -62,7 +62,7 @@ export default class WTSubscribeToOrderChangeLWC extends LightningElement {
         // }
         this.messageReceived = true;
         this.messageVar =
-            'Order Status Event received via EventBridge (' +
+            'Order Status Event received via Lambda/nForce (' +
             event.data.payload.ebikesaws__Status__c +
             ')';
     }
@@ -74,6 +74,6 @@ export default class WTSubscribeToOrderChangeLWC extends LightningElement {
         // }
         this.messageVar = 'Listening for DynamoDB Order Updates...';
         this.messageReceived = false;
-        this.subscribed = false;
+        //this.subscribed = false;
     }
 }

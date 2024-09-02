@@ -22,7 +22,7 @@ export default class NewsComponent extends LightningElement {
     fetchNews() {
         retriveNews()
             .then((response) => {
-                console.log('xxxxxxx' + response);
+                console.log('response ==>' + response);
                 this.formatNewsData(response.articles);
             })
             .catch((error) => {

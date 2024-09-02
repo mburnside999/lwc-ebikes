@@ -1,0 +1,23 @@
+<aura:component
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global"
+>
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <lightning:card
+        title="Lightning Out Flow"
+        iconName="utility:animal_and_nature"
+    >
+        <div class="slds-media__body">
+            <h2 class="slds-card__header-title green"></h2>
+        </div>
+        <div class="slds-box">
+            <p class="message">
+                Message: You are viewing a Flow running in Lightning Out hosted
+                in a Python Flask app!
+            </p>
+        </div>
+    </lightning:card>
+    <lightning:card>
+        <lightning:flow aura:id="flowData" />
+    </lightning:card>
+</aura:component>

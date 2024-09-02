@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>18</activeVersion>
+    <developerName>Bike_Promotion_Newsletter</developerName>
+    <masterLabel>Bike Promotion Newsletter</masterLabel>
+    <templateVersions>
+        <content>Make sure to end the letter with a signature with the name {!$User.Name}
+
+The output format is HTML in the below format:
+&lt;html&gt;
+ &lt;body&gt;
+ &lt;title&gt; &lt;/title&gt;
+ &lt;h2&gt; Features: &lt;/h2&gt;
+ &lt;img&gt; &lt;/img&gt; 
+ &lt;br/&gt;  
+ &lt;h3&gt; Discover More Products You Might Enjoy&lt;h3&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML and should include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+Use clear language
+The newsletter should contain an introduction that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Make sure to end the newsletter with a signature with the name {!$User.Name}
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML and should include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+Use clear language
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Make sure to end the newsletter with a signature with the name {!$User.Name}
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>3</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML and should include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+Use clear language
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Include a list of important bike maintenance tips.
+Make sure to end the newsletter with a signature with the name {!$User.Name}
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>4</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML and should include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+Image sizes should be 200 X 150
+Use clear language
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Include a list of important bike maintenance tips.
+Make sure to end the newsletter with a signature with the name {!$User.Name}
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>5</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML and should include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+Use clear language
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Include a list of important bike maintenance tips.
+Make sure to end the newsletter with a signature with the name {!$User.Name}
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>7</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML and should include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+Use clear language
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Include a list of important bike maintenance tips.
+Make sure to end the newsletter with a signature with the name {!$User.Name}
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>6</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Start with a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a lparagraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name} with a title of &quot;eBikes Chief Scientist&quot;
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>9</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+Start with a section called &quot;Featured Product&quot; that uses the following information {!$Input:Bike.Name} {!$Input:Bike.Picture_URL__c} {!$Input:Bike.Description__c}
+All output should be in HTML and should include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+Use clear language
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+Include a list of important bike maintenance tips.
+Make sure to end the newsletter with a signature with the name {!$User.Name}
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>8</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include with a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a lparagraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name} with a title of &quot;eBikes Chief Scientist&quot;
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>10</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include with a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name} with a title of &quot;eBikes Chief Scientist&quot;
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>11</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include with a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Scientist&quot;
+&quot;&quot;&quot;
+Now create the newsletter.
+
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>12</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include with a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Scientist&quot;
+
+
+Now create the newsletter.
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>13</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+Make the background beige
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include with a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Scientist&quot;
+
+
+Now create the newsletter.
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>14</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+Make the background beige
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include  a section called &quot;Featured Article&quot; that includes a paragraph on how bicycle disc brakes work
+
+The include a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a section called &quot;Maintenance&quot; with a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Engineer&quot;
+
+
+Now create the newsletter.
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>15</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+Make the background beige
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include  a section called &quot;Featured Article&quot; that includes a paragraph on how bicycle disc brakes work and a simple diagram
+
+The include a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a section called &quot;Maintenance&quot; with a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Engineer&quot;
+
+
+Now create the newsletter.
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>16</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+Make the background beige
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include  a section called &quot;Featured Article&quot; that includes two detailed paragraphs on how bicycle disc brakes work.
+
+The include a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a section called &quot;Maintenance&quot; with a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Engineer&quot;
+
+
+Now create the newsletter.
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>17</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+Make the background beige
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include  a section called &quot;Featured Article&quot; that includes two detailed paragraphs on how bicycle disc brakes work.
+
+The include a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a section called &quot;Maintenance&quot; with a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+
+Then add a section called &quot;Joke of the Day&quot; and add a funny joke about bicycles or cycling.
+
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Engineer&quot;
+
+
+Now create the newsletter.
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>18</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>I&apos;m a sales accountant, please based on this letter of the CEO to the stakeholders, get me the goals of the company and where can Salesforce be used on these.
+
+Dear Shareholders,
+ 
+We began this fiscal year with clear strategic objectives, and we delivered solid outcomes, including record revenue, an 84%
+increase in pre-tax income, and significant increases in our returns. Our team diligently made substantial progress on our goals
+to further enhance financial performance, technology, products, corporate responsibility, diversity, and community involvement.
+Our stock’s performance continued to positively reflect the advancements we’ve made. 
+We continued to successfully implement our action-oriented improvement plan—GEAR Up (Growing Efficiencies and Revenue)
+— which was launched 2 years ago to drive efficiencies and revenue, and it’s working. Last fiscal year, we had a 5% increase in
+fee income and a 4% decrease in expenses, demonstrating that we are reaping substantial and sustainable benefits from this
+enterprise-wide initiative. With enhanced training, improved customer analytics, and increased marketing capacity, we are
+starting to notice growth in our revenue base from developing deeper customer relationships. Regarding our expenses, we
+obtained significant savings from several of our larger initiatives, most notably from the retirement program redesign and banking
+center consolidations. 
+We know we aren’t done. 
+GEAR Up
+ has been successful, but we continue to look for ways to put systems in place to scale our
+business, decrease choke points, and free up our employees’ time so they can focus on being innovative and forward-thinking as
+they work to realize our shared goals as a business. 
+To this end, we want to move a significant number of our applications to the
+secure cloud and complete the automation and streamlining of our end-to-end credit process. 
+As we continue to grow our business and position Valiant for the future, we’ve been encouraged by positive external factors, such
+as higher interest rates, tax reform, and the potential for regulatory relief. Our balance sheet remains well-positioned to benefit
+from rate increases, with over 90% of our loans tied to floating rates and about half of our deposits noninterest-bearing at the end
+of the year. The Federal Reserve increased interest rates four times in the last 3 years, resulting in more than a $200 million USD
+increase in our net interest income. as we prudently managed loan and deposit pricing. As of December, the Federal Reserve
+could raise rates three more times this year.
+ 
+While it’s still too early to determine its’ full effect, the Tax Reform Act passed by Congress in December will benefit Valiant and
+our customers, as well as drive U.S. economic growth. We distributed some of the benefits of lower taxes to our hardworking
+team by raising our minimum wage to $15 USD per hour and paying approximately 4,500 non-officer colleagues (more than half
+of our workforce) a one-time bonus of $1,000 USD. We value our team and strive to provide competitive compensation packages
+that attract and retain the best talent. 
+We have recently witnessed some positive regulatory developments as well, including a white paper issued by the Treasury and
+a bipartisan compromise on regulatory relief bills for financial institutions. The changes outlined could allow us to actively manage
+capital and liquidity on a real-time basis. These changes also have the potential to lower related expenses, for example by
+reducing the amount of data management required and simplifying regulatory compliance processes. As one of the smallest
+banks subject to CCAR and LCR and with a relatively simple business model, we face a disproportionate burden. We are closely
+monitoring the developments and hope to have additional action this year. The ultimate benefit will depend on what changes are
+made, as well as how they are interpreted and implemented. 
+We remain committed to being a trusted advisor to our customers as we’ve been preparing for a new age in banking. Our
+technology transformation strategy, TechVision2030, is one of our top priorities. We will continue to invest in mobile technology to
+enhance the customer experience by putting power in the customer’s hands to connect with the bank using the channel and
+method that they choose. We rolled out improved information reporting and mobility tools for our commercial customers. We also
+deployed new platforms for consumer loans and mortgages. We’re upgrading our customer contact centers to leverage biometric
+authentication, generative AI natural language processing, and robotics. We are employing tools, such as robust data analytics,
+to match our customers’ banking habits with products and services to meet their needs.
+  
+Page 
+2
+ of 
+5
+Additionally, we are investigating a new customer relationship management platform across the bank. We believe
+TechVision2030 provides us the blueprint to strengthen our core technology infrastructure as we continue our transformation. 
+Valiant demonstrated its resiliency recently as we dealt with some unique challenges. For instance, we faced several major
+natural disasters. In addition to the California wildfires, large hurricanes temporarily disrupted business at some of our locations,
+affecting our customers and colleagues. Because of our prepared team, we were able to unite, recover, and assist those in need.
+Furthermore, in support of our communities, we proudly partnered with the American Red Cross, and other organizations, to
+donate more than $100,000 USD to assist in the hurricane-related disaster recovery efforts. 
+Revenue grew at an all-time record of 11% in the last fiscal year. This included a 15% increase in net interest income, which
+benefited from higher interest rates as we managed loan and deposit pricing. In addition, the successful execution of our GEAR
+Up initiative helped increase fee income and lowered expenses. Credit quality remained strong with a net charge-off ratio of 19
+basis points, well below our historical norm, even as we continued to navigate the energy cycle. Our tax provision included a
+$107 million USD charge to adjust deferred taxes resulting from the enactment of the Tax Cuts and Jobs Act. Altogether, we
+generated a net income of $743 million USD, an increase of 56% over the past 2 years, and drove significant increases in our
+returns as well as an efficiency ratio of 58%. 
+Average loans increased by $670 million USD, excluding cyclical declines in Energy and Mortgage banking. Loans grew in most
+businesses, led by National Dealer Services as well as Corporate and Private Banking. Average noninterest-bearing deposits
+grew 4%, which was offset by a decline in interest-bearing deposits. The decrease was primarily due to customers using their
+excess liquidity for working capital needs and acquisitions, our deliberate approach to relationship pricing, and strategic actions
+we took in light of Liquidity Coverage Ratio requirements. 
+Our capital position remains strong. The first and most important use of capital is to invest in profitable growth. Since we are
+generating more capital than we can deploy, returning excess capital to our shareholders is a priority. We repurchased
+approximately 7.3 million shares under our equity repurchase program. With increases in July and October, our board of directors
+raised our quarterly dividend a total of 30%. Through the share buyback and dividends, we returned $724 million USD to our
+shareholders, a 58% increase last fiscal year. 
+We believe our stock’s market value, which increased 27% last fiscal year, reflects our solid financial performance, which
+included the benefit of deliberate balance sheet positioning and delivering on GEAR Up targets, as well as investors’
+acknowledgment of the value of our relationship banking model. For the second consecutive year, Valiant’s stock outperformed
+all our peers, as well as the KBW Bank Index and the S&amp;P500 Index. 
+Balanced Market Presence and Relationship Banking 
+ 
+We recognize that customer loyalty begins with building connections, and this is an area we’ll focus on over the next 3 years.
+Being a trusted advisor means we’re committed to forming long-lasting relationships, rather than short-term gains. With long-
+tenured employees who have deep expertise in the businesses, we deliver high-quality financial services, yet today we’re still
+operating as siloed businesses and need to improve collaboration among our mortgage sales, retail bank sales, and credit card
+teams, as well as the frontline faces for our customers—their bank teller or phone representative. We believe our relationship-
+based strategy, combined with our attractive geographic footprint, helps drive our success. 
+We have a unique geographic footprint that’s well situated with a strong presence in the major metropolitan areas of Connecticut,
+California, Texas, and Michigan, providing us with a balanced market presence. We also have locations in Arizona and Florida,
+with certain businesses operating in several other states, as well as Canada and Mexico. A single, integrated platform across our
+markets provides significant synergies that are highly efficient, yet cost-effective. While our markets are not contiguous, they are
+complementary. Our footprint provides diversity to our portfolio, reduces risk, and provides important counterbalances for us as
+economic conditions change. 
+Our headquarters is located in Hartford, Connecticut, and we have over 120 banking centers in the Hartford, Houston, Los
+Angeles, and Detroit areas. Over the past 2 years, our growth in Connecticut has been affected by the energy cycle.
+Strategically, we have reduced the size of our energy portfolio by $1.2 billion USD within the past 2 years and have successfully
+managed credit losses. We believe this will be less of a headwind going forward, and our combined states’ economy is expected
+Page 
+3
+ of 
+5
+to grow faster than the national average in the next fiscal year. 
+We are a market leader in Michigan, where we have been operating for 69 years. With over 190 banking centers, we maintain a
+strong deposit base. Over 50% of our loans in Michigan are to middle-market companies. After several years of contraction,
+loans have begun to increase, and we expect this to continue as the Michigan economy grows and diversifies. We are very
+excited about the resurgence underway in Detroit. We look forward to participating in its continued revitalization through our
+financial support of new developments along the Woodward Corridor and in Corktown, in addition to our continued support of
+many of Detroit’s sports teams. 
+More than 95 of our banking centers are located in California, the largest state economy in the United States, positioned in the
+major metropolitan areas of San Francisco, San Jose, Los Angeles, and San Diego. California accounts for 37% of our total
+loans and contributed most to our loan growth last fiscal year, led by Private Banking, National Dealer Services, and the general
+Middle Market. Economic activity in California was slightly above the national average and is expected to continue to outperform
+in the next fiscal year. 
+We are aligned by three business segments—the Business Bank, the Retail Bank, and Wealth Management. Each segment
+made significant strides in the previous fiscal year. 
+By providing comprehensive financial solutions, the Business Bank experienced broad-based growth across our various business
+lines. Putting aside cyclical declines in Energy and Mortgage banking, we achieved solid loan growth in National Dealer Services;
+U.S. Banking, Technology and Life Sciences (driven by Equity Fund Services); as well as Environmental Services. In addition,
+fee incomes increased 5%, which benefitted from enhanced treasury management solutions, including enabling our customers to
+more efficiently manage their business through reporting and mobile capabilities. 
+We continue to enhance our sales and service model for our middle-market businesses, delivering tools and sharing best
+practices with the goal of more efficient growth. Our record number of new middle-market banking relationships built in California
+demonstrated early results, which drove strong loan and deposit growth. Our relationship model and high standards for customer
+service distinguish us from competitors. For instance, for the third time in the last 4 years, our Captive Insurance group was
+named the “U.S. Captive Collateral Service Provider” of the year by Captive Review Magazine. Valiant also was a recipient of the
+National Greenwich Excellence Award for Middle Market Banking for overall customer satisfaction. 
+Our Retail Bank is a vital part of our deposit gathering and revenue growth strategy. It is imperative that we have the products,
+services, and locations to meet our customers’ needs. Our success is demonstrated by the more than $400 million USD
+increase in average Retail Bank deposits in the last fiscal year along with our team’s efforts to drive customer engagement. To
+maximize the mobile banking experience, Retail Bank innovated a major upgrade across all mobile devices. We integrated and
+expanded our real-time alerts and implemented new features for our customers, such as the ability to log in using facial scanning
+for iPhones, view check images, and perform transaction searches. We also launched an Android tablet application. Through
+these initiatives, we achieved our goal of providing our customers with more convenient features to manage their finances
+anytime and anywhere. In this ever-evolving age of technology, part of our ongoing service commitment is to provide customers
+with more secure, authenticated ways to make transactions. Our Retail Bank team converted to a state-of-the-art debit card
+platform and completed a brand conversion, efficiently reissuing more than 500,000 new chip-embedded debit cards to better
+protect our customers’ information during usage, such as point of sale transactions. 
+We have a variety of tools and information to help small businesses reach their goals. These customers found that our
+commercial and merchant card offer increased their efficiency. As a result, Small Business card fees increased more than 20% in
+the last fiscal year, primarily related to new and expanded merchant card business. 
+Wealth Management enables us to bring private banking, investment management, and fiduciary services to our Business Bank
+and Retail Bank clients. Last fiscal year, the Wealth Management team delivered a strong performance by growing average loans
+over 4% and fee income by 5%, including a 4% increase in fiduciary income. We launched our Wealth Productivity initiative,
+which incorporates a relationship management tool to enable our colleagues to better serve our clients, and ultimately, drive
+increased market share. We also continued to enhance our investment management platform by adding new advisors. Finally,
+Page 
+4
+ of 
+5
+our Professional Trust Alliance remains diligent in building business. Currently, we have agreements with 17 alliance partners.
+This business has become a significant contributor to our fee income and assets under management continue to grow at a strong
+pace. 
+Trusted Choice for Consumers and Businesses
+We recognize that maintaining customer confidence is a key component of our relationship banking strategy. As cyber threats
+evolve, we continue to invest in protecting our customers. In the last fiscal year, we increased customer communications,
+recruited and trained highly-skilled colleagues, and enhanced our security detection capabilities. We take a proactive approach to
+cybersecurity, making sure we understand the threats and vulnerabilities that exist in the world, and that the necessary
+safeguards are in place to help protect against potential risks. Our robust, in-depth defense strategy also focuses on
+responsiveness and recovery capabilities. We have technical experts who are constantly reassessing our processes and best
+practices while monitoring systems around the clock and adjusting as necessary. 
+Guided by a Strong Board
+Our board of directors provides Valiant with strong guidance and direction. Along with executive management, our board
+regularly reviews and ensures that we adhere to our long-term corporate strategy. Much of that strategy, and the necessary
+tactics to achieve it, stems from knowing who we are: a non-complex, regional, commercially-focused bank. We are dedicated to
+serving our communities by meeting their basic financial needs, with an emphasis on our core capabilities of taking deposits and
+making loans. 
+Our long-term value is generated not by sheer scale, but rather through a sustainable competitive advantage with a customer
+base we understand, and a conservative approach to risk, capital management, and operations. We strive to build enduring
+relationships that drive superior credit quality, a stable funding base, and consistent returns that meet our shareholders’
+expectations. Collectively, our 10 independent directors bring a wealth of skills, experiences, diversity, and knowledge that allow
+them to effectively address the interests of Valiant’s four core constituencies: our shareholders, our customers, our colleagues,
+and the communities we serve each day. 
+Last fiscal year, our board appointed a new independent director, Barbara R. Smith, who acts as the Chairman, President, and
+CEO of a Texas-based Commercial Metals Company. She brings many key skills to our board, including relevant business
+management experience and knowledge of our geographic markets, as well as significant financial expertise garnered through
+the chief financial officer roles she previously held. 
+Corporate Responsibility 
+ 
+Valiant is only as strong as the communities we serve, and that is why we invest in them, helping ensure they remain vibrant.
+Annual events, financial education programs, corporate giving, and our drive for sustainability were just some of the ways Valiant
+continued to shine in the community during the last fiscal year. Our Corporate Responsibility report, which can be found on
+Valiant.com, provides a comprehensive review of our active environmental, social, and governance program. 
+Here are a few
+highlights:
+●
+●
+●
+●
+Our most visible community event—Shred Day—held in Hartford, Dallas/Fort Worth, Houston, Phoenix, and Detroit,
+experienced a banner year with a record 862,087 pounds of paper recycled. The DFW event shattered its previous record,
+collecting more than 548,000 pounds. In the process, we raised awareness of the Valiant brand, helped reduce fraud and
+identity theft, preserved the environment by freeing up space in local landfills, and helped fight hunger in our communities
+with a connected food drive. 
+A key component in Valiant’s commitment to our communities is empowering youth and adults to become good financial
+stewards. In the last fiscal year, we connected with thousands of students through our Money $ense, Gift of Knowledge,
+Empower Series, and youth savings programs. These educational opportunities created a dialogue with our communities
+to prove Valiant is a trusted advisor.
+Valiant, along with our colleagues, continued to serve as pillars in the community, distributing $7.9 million USD in
+contributions to nonprofit organizations and logging nearly 68,000 volunteer hours. 
+Our commitment to fostering a diverse work environment garnered national recognition. For the fourth consecutive year,
+we earned a perfect rating on the Human Rights Campaign’s Corporate Equality Index, resulting in designation as a Best
+Place to Work for LGBTQ Equality. For the fifth consecutive year, Valiant was named to LATINO Magazine’s “LATINO 100”
+list. Finally, for the third consecutive year, Valiant was ranked 2nd on DiversityInc’s Top Regional Companies for diversity. 
+Page 
+5
+ of 
+5
+We are dedicated to protecting and preserving the environment. Significant strides were made in achieving our 2030
+Environmental Sustainability Goals to reduce emissions, water consumption, waste generation, and paper usage. Topping the list
+of accomplishments for the last fiscal year was the achievement of our 2030 greenhouse gas (GHG) reduction goal several years
+ahead of schedule, with a reduction of 22.4%, compared to our target of 20%. This was one component that helped us achieve
+an A- rating by Carbon Disclosure Project (CDP) for our climate change management strategy and emission reduction efforts.
+The honor placed Valiant among the top 16% of responders within the U.S. financial services industry. The year also marked our
+first mapping to demonstrate how Valiant’s actions reflect the United Nations’ 17 Sustainable Development Goals. We also
+supported our customers’ sustainability efforts through over $830 million USD in environmentally beneficial loans and
+commitments in 13 different green loan categories. 
+Moving Forward
+We are focused on continuing to enhance shareholder value by delivering solid results and positioning Valiant well for the future.
+Our relationship banking strategy and prudent management of loan and deposit pricing helped drive record revenue as interest
+rates increased. It’s been energizing to notice the results we’ve achieved with our GEAR Up initiative, which is the result of the
+perseverance and dedication of our 8,000 colleagues. Over the years, we’ve witnessed the ebbs and flows of the banking
+industry in response to the varying economic cycles. Today, we are experiencing an upswing and we believe Valiant is well
+situated to benefit from lower tax rates, further interest rate increases, and favorable changes in regulation. We operate with a
+“go forward” approach and remain committed to being responsible stewards of our shareholders’ capital by growing relationships,
+continued implementation of our GEAR Up initiative, and returning excess capital to our investors. 
+Valiant’s success story is not only shared through our promise to “raise expectations of what a bank can be,” but also through our
+core values of diversity, collaboration, agility, excellence, customer-centricity, integrity, and involvement. These are not merely
+words, but values we practice daily. Thank you for your support.
+Sincerely, 
+Elizabeth Stone
+President and Chief Executive Officer
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Draft</status>
+        <versionNumber>19</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are chief engineer at eBikes
+You want to build a web based newsletter introducing new products
+You must strictly follow my instructions below
+
+Instructions:
+&quot;&quot;&quot;
+Build a web based newsletter about products
+All output should be in HTML
+The newsletter should contain an introduction of three paragraphs that explains our commitment to bike innovation and quality, and describe our focus on serving the needs of riders of all levels. 
+After the introduction include  a section called &quot;Featured Article&quot; that includes two detailed paragraphs on how bicycle disc brakes work.
+
+The include a section called &quot;Featured Product&quot; that uses the following information on different lines
+ {!$Input:Bike.Name} 
+{!$Input:Bike.Picture_URL__c} 
+{!$Input:Bike.Description__c}
+The featured product image should be of size 400 X 300
+
+Include a table of products from {!$Apex:NewsLetterPromptExtension.Prompt}
+the image sizes in the table should be 200 X 150
+Use clear language
+The newsletter should Include a section called &quot;Maintenance&quot; with a paragraph on how important bike maintenance is and a list of important bike maintenance tips
+
+Then add a section called &quot;Joke of the Day&quot; and add a funny joke about bicycles or cycling.
+
+Make sure to end the newsletter with a signature with the name {!$User.Name}{!$User.Name} with a title underneath of &quot;eBikes Chief Engineer&quot;
+
+
+Now create the newsletter.
+
+&quot;&quot;&quot;
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Draft</status>
+        <templateDataProviders>
+            <definition>apex://NewsLetterPromptExtension</definition>
+            <parameters>
+                <definition>SOBJECT://Product__c</definition>
+                <isRequired>true</isRequired>
+                <parameterName>Bike</parameterName>
+                <valueExpression>{!$Input:Bike}</valueExpression>
+            </parameters>
+            <referenceName>Apex:NewsLetterPromptExtension</referenceName>
+        </templateDataProviders>
+        <versionNumber>20</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

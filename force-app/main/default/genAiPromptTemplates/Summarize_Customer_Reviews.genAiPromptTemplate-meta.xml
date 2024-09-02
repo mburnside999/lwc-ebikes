@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>2</activeVersion>
+    <developerName>Summarize_Customer_Reviews</developerName>
+    <masterLabel>Summarize Customer Reviews</masterLabel>
+    <templateVersions>
+        <content>You are a Data scientist. Summarize the feedback for below. 
+
+{!$RelatedList:Bike.Customer_Reviews__r.Records}
+
+Use the below Instructions:
+
+Assign AIGeneratedSentiment to positive, negative or neutral. The ProductId is known and use this {!$Input:Bike.Id}
+
+An example of a positive review is - great, awesome experience, exceed expectation
+An example of a negative review is - had issues, not a great experience, not worth
+An example of a neutral review is - Its decent, gets the job done
+ 
+
+Make sure the response is strict JSON.
+
+Here is the example JSON output:
+{
+“AIGeneratedFeedback”: &quot;&quot;,
+&quot;AIGeneratedSentiment&quot;: &quot;positive/neutral/negative&quot;,
+&quot;ProductId&quot;: ProductId
+}
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Bike.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Customer_Reviews__r</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Bike.Customer_Reviews__r.Records</referenceName>
+        </templateDataProviders>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <templateVersions>
+        <content>You are a Data scientist. Summarize the feedback for below. 
+
+{!$RelatedList:Bike.Customer_Reviews__r.Records}
+
+Use the below Instructions:
+
+Assign AIGeneratedSentiment to positive, negative or neutral. The ProductId is known and use this {!$Input:Bike.Id}
+
+An example of a positive review is - great, awesome experience, exceed expectation
+An example of a negative review is - had issues, not a great experience, not worth
+An example of a neutral review is - Its decent, gets the job done
+ 
+
+Make sure the response is strict JSON.
+
+Here is the example JSON output:
+{
+“AIGeneratedFeedback”: &quot;&quot;,
+&quot;AIGeneratedSentiment&quot;: &quot;positive/neutral/negative&quot;,
+&quot;ProductId&quot;: ProductId
+}
+
+</content>
+        <inputs>
+            <apiName>Bike</apiName>
+            <definition>SOBJECT://Product__c</definition>
+            <masterLabel>Bike</masterLabel>
+            <referenceName>Input:Bike</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4_32k</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getRelatedList</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>parentRecordId</parameterName>
+                <valueExpression>{!$Input:Bike.Id}</valueExpression>
+            </parameters>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>relatedListName</parameterName>
+                <valueExpression>Customer_Reviews__r</valueExpression>
+            </parameters>
+            <referenceName>RelatedList:Bike.Customer_Reviews__r.Records</referenceName>
+        </templateDataProviders>
+        <versionNumber>2</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

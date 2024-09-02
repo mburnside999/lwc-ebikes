@@ -128,3 +128,7 @@ force-app/test/**
 **/pages/UnderConstruction.page-meta.xml
 **/staticresources/SiteSamples
 **/staticresources/SiteSamples.resource-meta.xml
+
+**/tsconfig.json
+
+**/*.ts
