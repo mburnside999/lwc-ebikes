@@ -22,7 +22,7 @@ public with sharing class NewsLetterGenerator {
         promptGenerationsInput.inputParams = inputParams;
 
         return EinsteinGenerativeGatewayService.getPromptTemplateResponse(
-            '0hfIg0000004C9cIAE',
+            '0hfd2000004XkVnAAK',
             promptGenerationsInput
         );
     }

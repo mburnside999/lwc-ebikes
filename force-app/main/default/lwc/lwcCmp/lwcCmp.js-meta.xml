@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="lwcCmp">
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle
+    xmlns="http://soap.sforce.com/2006/04/metadata"
+    fqn="lwcCmp"
+>
     <apiVersion>45.0</apiVersion>
     <isExposed>true</isExposed>
     <targets>
@@ -9,7 +12,12 @@
     </targets>
     <targetConfigs>   
         <targetConfig targets="lightning__HomePage,lightning__RecordPage">
-            <property name="msg" type="String" default="You are entering the Twilight Zone" label="Message"/>
+            <property
+                name="msg"
+                type="String"
+                default="You are entering the Twilight Zone"
+                label="Message"
+            />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

@@ -1,0 +1,34 @@
+description: "This modal displays message text and reactions to it. It is meant to be used with the ReactionsGet api method."
+schema:
+  properties:
+    viewData:
+      type: map
+      required: true
+    reaction:
+      type: list
+      required: true 
+components:
+  - definition: modal
+    properties:
+      title: "View Message Reactions"
+    components:
+      - definition: section
+        properties:
+          text: 
+            text: "The following message has a unique reaction count of {!view.properties.viewData.reactionsCount}"
+            type: "mrkdwn"      
+      - definition: section
+        properties:
+          text: 
+            text: "{!view.properties.viewData.messageText}"
+            type: "mrkdwn" 
+      - definition: iteration
+        properties:
+          foreach: "{!view.properties.reaction}"
+          foritem: "reaction"
+        components: 
+          - definition: section
+            properties:
+              text:
+                text: "*{!reaction.name}:* {!reaction.count}"
+                type: "mrkdwn"

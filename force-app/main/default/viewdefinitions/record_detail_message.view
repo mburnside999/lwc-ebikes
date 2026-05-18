@@ -1,0 +1,35 @@
+description: "This component displays record details in a message"
+schema:
+  properties:
+    headerText:
+      type: string
+      defaultValue: "Record Details"
+    recordId:
+      type: string
+      required: true
+    objectApiName:
+      type: string
+      required: true
+dataproviders:
+  record:
+    definition: "apex__DataProviderSObjectRecord.getRecord"
+    properties:
+      objectApiName: "{!view.properties.objectApiName}"
+      recordId: "{!view.properties.recordId}"
+components:
+  - definition: message
+    components:
+      - definition: header
+        properties:
+          text: "{!view.properties.headerText}"
+      - definition: divider
+      - definition: iteration
+        properties:
+          foreach: "{!record}"
+          foritem: "record"
+        components:
+          - definition: section
+            properties:
+              text:
+                text: "*{!record.label}:* {!record.value}"
+                type: mrkdwn

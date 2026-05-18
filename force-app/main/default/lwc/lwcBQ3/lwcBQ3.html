@@ -1,8 +1,11 @@
 <template>
     <lightning-card
-        title="Google BiqQuery - Wikipedia Page Views"
+        title="Most Popular Wikipedia Page Views -  Last 24 Hrs"
         icon-name="custom:custom14"
     >
+        <div class="slds-box">
+            <p class="message">Messages: {msg}</p>
+        </div>
         <div class="slds-m-around_medium">
             <lightning-datatable
                 key-field="id"

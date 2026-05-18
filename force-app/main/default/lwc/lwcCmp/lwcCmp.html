@@ -1,7 +1,13 @@
 <template>
-    <lightning-card title="LWC" icon-name="utility:animal_and_nature">
+    <lightning-card
+        title="eBikes Editable Client Datatable"
+        icon-name="custom:custom63"
+    >
         <!--<h3 class='green'>I'm a Salesforce LWC</h3>-->
 
+        <div class="slds-media__body">
+            <h2 class="slds-card__header-title green"></h2>
+        </div>
 
         <lightning-button
             label="Say Hi to this LWC component!"
@@ -12,8 +18,7 @@
         <div class="slds-box">
             <p class="message">Messages: {msg}</p>
         </div>
-    </lightning-card>
-    <lightning-card>
+
         <c-lwc-account-list></c-lwc-account-list>
     </lightning-card>
 </template>

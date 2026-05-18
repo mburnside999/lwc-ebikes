@@ -77,7 +77,6 @@ public with sharing class ProductController {
                 Material__c
             FROM Product__c
             WHERE Product_Family__c = :familyId AND Id != :productId
-            
         ];
     }
 }

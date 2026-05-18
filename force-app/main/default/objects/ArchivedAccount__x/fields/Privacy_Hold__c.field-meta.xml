@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Privacy_Hold__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalDeveloperName>hasprivacyhold</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Privacy Hold</label>
+    <type>Checkbox</type>
+</CustomField>

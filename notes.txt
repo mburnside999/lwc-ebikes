@@ -4,3 +4,7 @@ config file says PlatformConnect:5
 
 BigQuery3.getBQ();
 
+
+
+
+select id from ApexCalloutEventLog limit 5

@@ -1,7 +1,5 @@
 public class NewsLetterPromptExtension {
-    @InvocableMethod(
-        CapabilityType='FlexTemplate://Bike_Promotion_Newsletter'
-    ) // Matches API Name of template*/
+    @InvocableMethod // Matches API Name of template*/
     public static List<Response> getPrompt(List<Request> requests) {
         Request input = requests[0];
         List<Response> responses = new List<Response>();

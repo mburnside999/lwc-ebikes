@@ -1,0 +1,14 @@
+{
+  "required" : [ "Input:plsceholder" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:plsceholder" : {
+      "title" : "plsceholder",
+      "description" : "placeholer",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

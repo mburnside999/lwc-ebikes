@@ -6,7 +6,7 @@ public with sharing class EinsteinGenerativeGatewayService {
         try {
             // Call the service
             ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationsOutput = ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate(
-                '0hfIg0000004C9cIAE',
+                '0hfd2000004XkVnAAK',
                 input
             );
             //ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationsOutput = ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate(promptTemplateDeveloperName, input);

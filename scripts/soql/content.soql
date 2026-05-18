@@ -1,0 +1,2 @@
+SELECT ArchivedById, ArchivedDate, ContentAssetId, ContentModifiedDate, ContentSize, CreatedById, CreatedDate, Description, Id, LastModifiedById, LastModifiedDate, LastReferencedDate, LatestPublishedVersionId, OwnerId, ParentId, PublishStatus, SharingOption, SharingPrivacy, Title
+  FROM ContentDocument

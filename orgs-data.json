@@ -1,0 +1,18 @@
+{
+  "orgs": [
+    {
+      "orgId": "00D5f000006Oghx",
+      "orgName": "Toyota New Zealand",
+      "domain": "tnz-c360a",
+      "edition": "Enterprise",
+      "instance": "NA244"
+    },
+    {
+      "orgId": "00D28000000bHiQ",
+      "orgName": "Toyota New Zealand",
+      "domain": "toyotacrm",
+      "edition": "Enterprise",
+      "instance": "AUS90"
+    }
+  ]
+}

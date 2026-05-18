@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>product_fkey__c</fullName>
+    <description>product_fkey</description>
+    <externalDeveloperName>product_fkey</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Product_fkey</label>
+    <length>128</length>
+    <referenceTargetField>Product__c.ProductCode__c</referenceTargetField>
+    <referenceTo>Product__c</referenceTo>
+    <relationshipLabel>Ebike_accessory</relationshipLabel>
+    <relationshipName>Ebike_accessory</relationshipName>
+    <type>IndirectLookup</type>
+</CustomField>

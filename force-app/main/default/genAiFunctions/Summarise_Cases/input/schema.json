@@ -1,0 +1,14 @@
+{
+  "required" : [ "ContactRecordId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "ContactRecordId" : {
+      "title" : "ContactRecordId",
+      "description" : "Required. Record ID of the contact or employee.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

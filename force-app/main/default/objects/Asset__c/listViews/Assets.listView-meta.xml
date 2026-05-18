@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assets</fullName>
+    <columns>NAME</columns>
+    <columns>Serial_Number__c</columns>
+    <columns>Category__c</columns>
+    <columns>Status__c</columns>
+    <columns>Location__c</columns>
+    <columns>Employee__c</columns>
+    <columns>Condition_Score__c</columns>
+    <columns>Next_Maintenance_Due__c</columns>
+    <columns>Model__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Assets</label>
+</ListView>

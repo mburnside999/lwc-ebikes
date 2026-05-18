@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <externalDeveloperName>c_00_n2w00000_qx_y_p_o</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Account</label>
+    <length>255</length>
+    <referenceTargetField>Account.ID__c</referenceTargetField>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Archived Accounts</relationshipLabel>
+    <relationshipName>Archived_Accounts</relationshipName>
+    <type>IndirectLookup</type>
+</CustomField>

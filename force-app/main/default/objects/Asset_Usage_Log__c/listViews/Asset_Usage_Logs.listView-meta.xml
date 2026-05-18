@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Usage_Logs</fullName>
+    <columns>NAME</columns>
+    <columns>Related_Asset__c</columns>
+    <columns>Usage_Type__c</columns>
+    <columns>Notes__c</columns>
+    <columns>User_Technician__c</columns>
+    <columns>Timestamp__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Asset Usage Logs</label>
+</ListView>

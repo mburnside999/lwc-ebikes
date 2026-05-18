@@ -1,0 +1,38 @@
+// SELECT Id, DeveloperName, Description, BusinessOwnerId, BusinessStatus, SecurityClassification 
+// FROM FieldDefinition 
+// WHERE EntityDefinitionId in ('Account','Lead','Contact')
+// and securityclassification != NULL
+
+
+List<String> entities=new List<String>();
+for (EntityDefinition ed: [SELECT count()  FROM FieldDefinition]){
+  entities.add(ed.qualifiedapiname)  ;
+}
+// SELECT Label, QualifiedApiName FROM EntityDefinition where qualifiedapiname='Account'
+
+
+// List<String> objs= new List<String>();
+// objs.add('Account');
+// objs.add('Contact');
+
+
+
+List<fielddefinition> fieldslist= new list<fielddefinition>();
+
+select Id, EntityDefinitionId,DeveloperName, Description, ComplianceGroup,SecurityClassification 
+FROM FieldDefinition limit 5
+WHERE EntityDefinitionId in ('Contact','Lead','Account') and Securityclassification!=NULL
+
+System.debug(fieldslist);
+
+
+
+SELECT RiskType,Setting,SettingGroup,OrgValue,StandardValue FROM SecurityHealthCheckRisks where RiskType = 'HIGH_RISK' order by SettingGroup
+
+SELECT CustomBaselineId	,DurableId, Score FROM SecurityHealthCheckRisks
+
+select AwsSErvice from NamedCredential where AwsService != null
+x
+SELECT SandboxName,SandboxOrganization,Description,Features,LicenseType,CopyProgress,StartDate,EndDate,ActivatedDate,Status from SandboxProcess where Status='1' order by StartDate
+
+

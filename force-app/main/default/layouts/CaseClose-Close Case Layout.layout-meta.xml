@@ -26,6 +26,10 @@
                 <behavior>Edit</behavior>
                 <field>Case_Category__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>AI_Summary__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>

@@ -1,0 +1,54 @@
+description: "View that displays a contact"
+schema:
+  properties:
+    title:
+      type: string
+      defaultValue: "View Contact"
+    recordId:
+      type: string
+      required: true
+    channelId:
+      type: string
+      required: false
+dataproviders:
+  contact:
+    definition: "apex__DataProviderSObjectRecord.getContactById"
+    properties:
+      recordId: "{!view.properties.recordId}"
+components:
+  - definition: modal
+    properties:
+      title: "{!view.properties.title}"
+      submitLabel: "Post to Channel"
+    events:
+      onsubmit:
+        definition: "apex__action__ActionDispatcherPostRecordDetailMessage"
+        properties:
+          objectApiName: "Contact"
+          recordId: "{!view.properties.recordId}"
+          channelId: "{!view.properties.channelId}"
+    components:
+      - definition: divider
+      - definition: section
+        properties:
+          text: "{!contact.Name}"
+      - definition: section
+        properties:
+          text:
+            text: "*Id:* {!contact.Id}"
+            type: mrkdwn
+      - definition: section
+        properties:
+          text:
+            text: "*Title:* {!contact.Title}"
+            type: mrkdwn
+      - definition: section
+        properties:
+          text:
+            text: "*Phone:* {!contact.Phone}"
+            type: mrkdwn
+      - definition: section
+        properties:
+          text:
+            text: "*Email:* {!contact.Email}"
+            type: mrkdwn

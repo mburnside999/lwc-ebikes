@@ -1,0 +1,19 @@
+description: Hey! This is an example!!
+schema:
+  properties:
+    headerText:
+      type: string
+      defaultValue: Hello world
+    message:
+      type: string
+      defaultValue: Not overridden from within view
+components:
+  - definition: message
+    components:
+      - definition: header
+        properties:
+          text: '{!view.properties.headerText}'
+      - definition: divider
+      - definition: section
+        properties:
+          text: '{!view.properties.message}'

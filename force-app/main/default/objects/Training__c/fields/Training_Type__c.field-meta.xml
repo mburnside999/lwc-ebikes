@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training_Type__c</fullName>
+    <label>Training Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>Technical</fullName>
+                <default>false</default>
+                <label>Technical</label>
+            </value>
+            <value>
+                <fullName>Soft Skill</fullName>
+                <default>false</default>
+                <label>Soft Skill</label>
+            </value>
+            <value>
+                <fullName>Certification Prep</fullName>
+                <default>false</default>
+                <label>Certification Prep</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

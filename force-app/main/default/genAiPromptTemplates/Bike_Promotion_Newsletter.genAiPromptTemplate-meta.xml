@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <activeVersion>18</activeVersion>
     <developerName>Bike_Promotion_Newsletter</developerName>
     <masterLabel>Bike Promotion Newsletter</masterLabel>
     <templateVersions>
-        <content>Make sure to end the letter with a signature with the name {!$User.Name}
+        <content
+        >Make sure to end the letter with a signature with the name {!$User.Name}
 
 The output format is HTML in the below format:
 &lt;html&gt;
@@ -795,7 +796,8 @@ Now create the newsletter.
         <versionNumber>18</versionNumber>
     </templateVersions>
     <templateVersions>
-        <content>I&apos;m a sales accountant, please based on this letter of the CEO to the stakeholders, get me the goals of the company and where can Salesforce be used on these.
+        <content
+        >I&apos;m a sales accountant, please based on this letter of the CEO to the stakeholders, get me the goals of the company and where can Salesforce be used on these.
 
 Dear Shareholders,
  

@@ -27,7 +27,7 @@ export default class AiNewsLetterGenerator extends LightningElement {
         //     <body>
         //         <title>Unleash Your Adventure with DYNAMO X4</title>
         //         <h3>Unleash Your Adventure with DYNAMO X4 </h3>
-        //         <img src="https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/ebikes/dynamox4.jpg" style="border-radius: 15px; width: 100%; max-width: 600px; height: auto;"> 
+        //         <img src="https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/ebikes/dynamox4.jpg" style="border-radius: 15px; width: 100%; max-width: 600px; height: auto;">
         //         <h2> Features: </h2>
         //         <p>Introducing the DYNAMO X4, a cutting-edge mountain bike designed for adventure enthusiasts. With its sleek carbon frame in red color, this bike is not only stylish but also built to withstand the toughest terrains. The bike comes with a 284-watt, 75Nm motor. MSRP is set at 7800.</p>
         //         <br>

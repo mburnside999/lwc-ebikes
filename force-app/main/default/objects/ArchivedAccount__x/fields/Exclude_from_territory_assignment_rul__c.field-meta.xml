@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exclude_from_territory_assignment_rul__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalDeveloperName>isexcludedfromrealign</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Exclude from territory assignment rules</label>
+    <type>Checkbox</type>
+</CustomField>

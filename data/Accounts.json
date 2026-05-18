@@ -11,7 +11,7 @@
             "BillingState": "MA",
             "BillingPostalCode": "02478",
             "BillingCountry": "USA",
-            "ebikesaws__ExtAccountId__c":"111"
+            "ebikesaws__ExtAccountId__c": "111"
         },
         {
             "attributes": {
@@ -24,8 +24,7 @@
             "BillingState": "CA",
             "BillingPostalCode": "94105",
             "BillingCountry": "USA",
-            "ebikesaws__ExtAccountId__c":"222"
-
+            "ebikesaws__ExtAccountId__c": "222"
         },
         {
             "attributes": {
@@ -38,8 +37,7 @@
             "BillingState": "NY",
             "BillingPostalCode": "10036",
             "BillingCountry": "USA",
-            "ebikesaws__ExtAccountId__c":"333"
-
+            "ebikesaws__ExtAccountId__c": "333"
         }
     ]
 }

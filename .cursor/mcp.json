@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "heroku": {
+      "command": "heroku mcp:start"
+    },
+    "MB Python MPC": {
+      "command": "python3 /Users/mburnside/MBDEV/MBPYTHONDEV/MCP/mcp_server_stdio.py"
+      
+    },
+    "Salesforce MCP": {
+      "url": "https://api.salesforce.com/platform/mcp/v1/custom/MBMCPServer",
+      "auth": {
+        "CLIENT_ID": "3MVG9n_HvETGhr3A12ndHy2N5WheO9EwamU03C_kGTUlzoaaXS1utzLRayqEAmgvziiqkSGC6X4blX7nGxeIY"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Searches for additional context and provides a case summary regarding policy violations of HR company policies.</description>
+    <invocationTarget>Summarise_Cases</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>Summarise Cases</masterLabel>
+</GenAiFunction>

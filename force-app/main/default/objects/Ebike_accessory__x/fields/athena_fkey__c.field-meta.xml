@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>athena_fkey__c</fullName>
+    <description>athena_fkey</description>
+    <externalDeveloperName>athena_fkey</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Athena_fkey</label>
+    <length>128</length>
+    <referenceTo>Ebikesales__x</referenceTo>
+    <relationshipLabel>Ebike_accessory</relationshipLabel>
+    <relationshipName>Ebike_accessory_del</relationshipName>
+    <type>ExternalLookup</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Makes a decision whether a policy has been violated or not</description>
+    <invocationTarget>HR_Policy_Violation_Decision</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <masterLabel>HR - Policy Violation Decision</masterLabel>
+</GenAiFunction>

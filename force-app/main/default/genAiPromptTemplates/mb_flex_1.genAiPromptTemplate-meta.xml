@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <activeVersion>11</activeVersion>
     <developerName>mb_flex_1</developerName>
@@ -287,7 +287,8 @@ write a brief for a sales handover including the data from
         <versionNumber>4</versionNumber>
     </templateVersions>
     <templateVersions>
-        <content>write a professional sales handover document using the instructions below
+        <content
+        >write a professional sales handover document using the instructions below
 
 instructions:
 &quot;&quot;&quot;
@@ -405,7 +406,8 @@ remind the sales people how important re-discovery is
         <versionNumber>7</versionNumber>
     </templateVersions>
     <templateVersions>
-        <content>you need to write a professional sales handover document in the voice of a seasoned sales manager using the instructions below, in the language that sales people understand.
+        <content
+        >you need to write a professional sales handover document in the voice of a seasoned sales manager using the instructions below, in the language that sales people understand.
 
 instructions:
 &quot;&quot;&quot;
@@ -584,7 +586,8 @@ remind the sales people how important re-discovery is
         <versionNumber>8</versionNumber>
     </templateVersions>
     <templateVersions>
-        <content>you need to write a professional sales handover document in the voice of a seasoned sales manager using the instructions below, in the language that sales people understand.
+        <content
+        >you need to write a professional sales handover document in the voice of a seasoned sales manager using the instructions below, in the language that sales people understand.
 
 instructions:
 &quot;&quot;&quot;

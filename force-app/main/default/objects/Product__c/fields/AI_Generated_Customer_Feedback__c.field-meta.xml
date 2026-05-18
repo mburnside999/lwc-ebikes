@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AI_Generated_Customer_Feedback__c</fullName>
+    <complianceGroup>Australian Privacy Principles</complianceGroup>
+    <encryptionScheme>None</encryptionScheme>
+    <label>AI Generated Customer Feedback</label>
+    <length>32768</length>
+    <securityClassification>Confidential</securityClassification>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>12</visibleLines>
+</CustomField>

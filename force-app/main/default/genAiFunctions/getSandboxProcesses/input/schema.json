@@ -1,0 +1,14 @@
+{
+  "required" : [ "inputVar" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "inputVar" : {
+      "title" : "inputVar",
+      "description" : "Enter the name of a sandbox",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

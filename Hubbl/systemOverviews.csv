@@ -1,0 +1,24 @@
+label,id,name,type,value,percentage,message,isWarning,createdAt,updatedAt
+Your Custom Objects + Your Custom Settings,212036,Your Custom Objects + Your Custom Settings,Schema,99,4,"4% (maximum 2,000)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Total Custom Objects + Total Custom Settings,212037,Total Custom Objects + Total Custom Settings,Schema,196,6,"6% (maximum 3,000)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Your Custom Metadata Types,212038,Your Custom Metadata Types,Schema,27,13,13% (maximum 200),false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Total Custom Metadata Types,212039,Total Custom Metadata Types,Schema,82,23,23% (maximum 350),false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Custom Metadata Type Usage,212040,Custom Metadata Type Usage,Schema,14%,14,"14% (1,435,106 of 10,000,000 characters)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Data Storage,212041,Data Storage,Schema,"233.4 MB
+                                        (Approx.)",0,0% (maximum 39.6 GB),false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+"API Requests, Last 24 Hours",212042,"API Requests, Last 24 Hours",API Usage,"2,010",1,"1% (maximum 135,000)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Rules,212043,Rules,Business Logic,2,0,"0% (maximum 2,000)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Apex Triggers,212044,Apex Triggers,Business Logic,37,,,false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Apex Classes,212045,Apex Classes,Business Logic,"4,229",,,false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Code Used,212046,Code Used,Business Logic,2.45%,2,"2% (244,758 of 10,000,000 characters)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Custom Apps,212047,Custom Apps,User Interface,14,0,"0% (maximum 9,999)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Published Site.com Sites,212048,Published Site.com Sites,User Interface,0,0,0% (maximum 50),false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Active Salesforce Sites,212049,Active Salesforce Sites,User Interface,0,0,0% (maximum 69),false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Active Flows,212050,Active Flows,User Interface,81,4,"4% (maximum 2,000)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Custom Tabs,212051,Custom Tabs,User Interface,86,0,"0% (maximum 9,999)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Visualforce Pages,212052,Visualforce Pages,User Interface,87,,,false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Analytics Cloud Integration User,212053,Analytics Cloud Integration User,Most Used Licenses,2,100,100% (2 of 2)Visit Checkout to obtain additional Analytics Cloud Integration User user licenses.,true,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+SalesforceIQ Integration User,212054,SalesforceIQ Integration User,Most Used Licenses,1,100,100% (1 of 1)Visit Checkout to obtain additional SalesforceIQ Integration User user licenses.,true,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Sales Insights Integration User,212055,Sales Insights Integration User,Most Used Licenses,1,100,100% (1 of 1)Visit Checkout to obtain additional Sales Insights Integration User user licenses.,true,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+B2BMA Integration User,212056,B2BMA Integration User,Most Used Licenses,1,100,100% (1 of 1)Visit Checkout to obtain additional B2BMA Integration User user licenses.,true,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z
+Portal Roles,212057,Portal Roles,Portal Roles,6,0,"0% (maximum 50,000)",false,2026-05-04T00:41:33.565Z,2026-05-04T00:41:33.565Z

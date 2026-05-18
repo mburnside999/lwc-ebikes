@@ -1,0 +1,21 @@
+{
+  "required" : [ "Input:Case_Cummary", "Input:Policy_Details" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:Case_Cummary" : {
+      "title" : "Case Cummary",
+      "description" : "This is the employee case summary containing relevant information regarding the violation in question.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Input:Policy_Details" : {
+      "title" : "Policy Details",
+      "description" : "This is the relevant policy knowledge article containing detailed information about the policy in question.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

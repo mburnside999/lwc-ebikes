@@ -7,4 +7,14 @@
         <target>lightning__RecordPage</target>
         <target>lightning__HomePage</target>
     </targets>
+    <targetConfigs>   
+        <targetConfig targets="lightning__HomePage,lightning__RecordPage">
+            <property
+                name="msg"
+                type="String"
+                default="You are entering the Twilight Zone"
+                label="Message"
+            />
+        </targetConfig>
+    </targetConfigs>
 </LightningComponentBundle>

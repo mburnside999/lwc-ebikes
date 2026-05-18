@@ -1,0 +1,13 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "inputVar" : {
+      "title" : "inputVar",
+      "description" : "if the name of a particular sandbox is given then assign that sandbox name to this variable. If the user requests all sandboxes then use the value 'All' for this variable.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "/Users/mburnside/MBDEV/MBSFDXDEV/ebikes-lwc-2"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "/Users/mburnside/MBDEV/MBSFDXDEV/ebikes-lwc-2"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "/Users/mburnside/MBDEV/MBSFDXDEV/ebikes-lwc-2/.eslintrc.json"
+    }
+  }
+}

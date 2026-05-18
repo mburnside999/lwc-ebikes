@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <activeVersion>3</activeVersion>
     <developerName>Bike_Summary</developerName>
     <masterLabel>Bike Summary</masterLabel>
     <relatedEntity>Product__c</relatedEntity>
     <templateVersions>
-        <content>help me understand the products we sell, like the {!$Input:Product__c.Id}
+        <content
+        >help me understand the products we sell, like the {!$Input:Product__c.Id}
 </content>
         <inputs>
             <apiName>objectToSummarize</apiName>

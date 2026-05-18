@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordProductionDate__c</fullName>
+    <description>Used for Security Centre Custom Metrics</description>
+    <encryptionScheme>None</encryptionScheme>
+    <inlineHelpText>Used for Security Centre Custom Metrics</inlineHelpText>
+    <label>Record Production Date</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

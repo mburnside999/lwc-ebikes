@@ -1,0 +1,26 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "riskCollection" : {
+      "title" : "riskCollection",
+      "description" : "format this list in bullet points and add a description of the risk",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__MBSecurityHealthCheckRisks?isAuraEnabled=true"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    },
+    "scoreVar" : {
+      "title" : "scoreVar",
+      "description" : "the overall Health Check score ",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

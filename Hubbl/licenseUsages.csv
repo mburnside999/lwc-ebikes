@@ -1,0 +1,134 @@
+id,name,status,totalLicenses,usedLicenses,remainingLicenses,expirationDate,type,apiName,createdAt,updatedAt
+830777,Scale Center,Active,5,3,2,,Permission Set Licenses,ScaleCenterPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830670,Analytics Cloud Integration User,Active,2,2,0,,User Licenses,INSIGHTS_INTEGRATION_USER,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830671,Authenticated Website,Active,5,0,5,,User Licenses,PLATFORM_PORTAL,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830672,Authenticated Website,Active,5,0,5,,User Licenses,Platform_Portal_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830673,B2BMA Integration User,Active,1,1,0,,User Licenses,PID_B2bmaIntegration,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830674,Bronze Partner,Active,50,0,50,,User Licenses,PID_BASIC_PRM,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830675,Chatter External,Active,500,0,500,,User Licenses,CSN_External_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830676,Chatter Free,Active,5000,1,4999,,User Licenses,CSN_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830677,Chatter Only,Active,50,0,50,,User Licenses,PID_CHATTER,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830678,Company Communities,Active,50,0,50,,User Licenses,PID_COMPANY_COMMUNITIES,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830679,Content Only,Active,50,0,50,,User Licenses,PID_CONTENT,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830680,Customer Community,Active,50,4,46,,User Licenses,PID_Customer_Community,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830681,Customer Community Login,Active,50,0,50,,User Licenses,PID_Customer_Community_Login,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830682,Customer Community Plus,Active,30,0,30,,User Licenses,PID_Customer_Community_Plus,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830683,Customer Portal Manager,Active,50,0,50,,User Licenses,POWER_SSP,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830684,Customer Portal Manager Custom,Active,50,0,50,,User Licenses,PID_Customer_Portal_Standard,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830685,Customer Portal Manager Standard,Active,50,0,50,,User Licenses,PID_Customer_Portal_Basic,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830686,Customer Portal User,Active,50,0,50,,User Licenses,SSP,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830687,Database.com Light,Active,50,0,50,,User Licenses,PID_DBCLIGHTUSER,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830688,Database.com User,Active,50,0,50,,User Licenses,PID_DBCUSER,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830689,Force.com - App Subscription,Active,50,0,50,,User Licenses,FDC_SUB,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830690,Force.com - Free,Active,50,0,50,,User Licenses,PID_FDC_FREE,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830691,Force.com - One App,Active,50,0,50,,User Licenses,FDC_ONE,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830692,Gold Partner,Active,50,0,50,,User Licenses,PID_STRATEGIC_PRM,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830693,High Volume Customer Portal,Active,50,1,49,,User Licenses,High_Volume_Customer_Portal_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830694,High Volume Customer Portal,Active,50,0,50,,User Licenses,HIGH_VOLUME_PORTAL,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830695,High Volume Portal,Active,50,0,50,,User Licenses,CSP_LITE_PORTAL,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830696,Identity,Active,100,0,100,,User Licenses,PID_Identity_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830697,Internal Portal User,Active,50,0,50,,User Licenses,Internal_Portal_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830698,Knowledge Only,Active,50,0,50,,User Licenses,PID_KNOWLEDGE,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830699,Overage Authenticated Website,Active,5,0,5,,User Licenses,Overage_Platform_Portal_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830700,Partner,Active,50,0,50,,User Licenses,POWER_PRM,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830701,Partner App Subscription,Active,50,0,50,,User Licenses,FDC_ISV_SUB,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830702,Partner Community,Active,60,0,60,,User Licenses,PID_Partner_Community,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830703,Partner Community Login,Active,250,1,249,,User Licenses,PID_Partner_Community_Login,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830704,Sales Insights Integration User,Active,1,1,0,,User Licenses,PID_ImplisitIntegration,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830705,Salesforce,Active,150,25,125,,User Licenses,SFDC,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830706,Salesforce Integration,Active,5,3,2,,User Licenses,SALESFORCE_INTEGRATION_USER,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830707,Salesforce Platform,Active,50,3,47,,User Licenses,AUL,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830708,Salesforce Platform One,Active,50,0,50,,User Licenses,AUL1,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830709,SalesforceIQ Integration User,Active,1,1,0,,User Licenses,PID_SalesforceIQIntegration,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830710,Service Cloud,Active,30,0,30,,User Licenses,SERVICE_CLOUD,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830711,Silver Partner,Active,50,0,50,,User Licenses,PID_STANDARD_PRM,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830712,Siteforce Only,Active,50,0,50,,User Licenses,PID_SITEFORCE,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830713,Work.com Only,Active,50,0,50,,User Licenses,PID_WCUSER,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830714,(Retired) Salesforce Mobile Chat Experience,Disabled,0,0,0,,Permission Set Licenses,IsotopePermissionSet,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830715,Agentforce (Default),Active,106,4,102,,Permission Set Licenses,EinsteinGPTCopilotPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830716,Analytics Cloud - Wave Community Users,Active,50,0,50,,Permission Set Licenses,WaveCommunitiesPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830717,Analytics Cloud Apps,Active,50,1,49,,Permission Set Licenses,AnalyticsAppPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830718,Analytics Cloud Explorer,Active,60,1,59,,Permission Set Licenses,InsightsExplorerPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830719,Analytics Embedded App,Active,10,0,10,,Permission Set Licenses,WaveEmbeddedApp,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830720,Analytics Platform,Active,60,2,58,,Permission Set Licenses,InsightsBuilderPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830721,Analytics Template Administration,Active,5,0,5,,Permission Set Licenses,InsightsInboxAdminAnalyticsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830722,Analytics View Only Embedded App,Disabled,0,0,0,,Permission Set Licenses,AnalyticsViewOnlyEmbeddedAppPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830723,B2B Commerce,Active,50,0,50,,Permission Set Licenses,B2BCommerce_B2BCommerceAdminPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830724,Backup and Restore User,Active,3100,2,3098,,Permission Set Licenses,bar_BackupRestoreUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830725,Code Builder,Active,100,2,98,,Permission Set Licenses,CodeBuilderUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830726,Company Community for Force.com,Active,5,0,5,,Permission Set Licenses,CompanyCommunityPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830727,CRM Analytics Plus,Active,5,4,1,,Permission Set Licenses,EinsteinAnalyticsPlusPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830728,CRM User,Active,60,2,58,,Permission Set Licenses,CRMUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830729,Cross Org Data Proxy,Active,10,0,10,,Permission Set Licenses,PID_XOrg_Proxy_User,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830730,Custom Mobile Applications,Active,10,0,10,,Permission Set Licenses,CustomMobileAppPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830731,Customer Data Cloud for Marketing,Active,200000,2,199998,,Permission Set Licenses,CdpSegmentsActivationsCardPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830732,Data Cloud,Active,200000,4,199996,,Permission Set Licenses,GenieDataPlatformStarterPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830733,Data Mask User,Active,40,6,34,,Permission Set Licenses,datamask_DataMaskUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830734,Dialer Inbound User,Active,10,0,10,,Permission Set Licenses,VoiceInboundPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830735,Dialer Minutes,Active,10,0,10,,Permission Set Licenses,VoiceMinutesPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830736,Dialer Outbound User,Active,10,0,10,,Permission Set Licenses,VoiceOutboundPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830737,Distributed Marketing,Active,10,0,10,,Permission Set Licenses,DMLAuthority_DistributedMarketingPSL,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830738,Einstein Conversation Insights AI User License,Active,5,2,3,,Permission Set Licenses,EinsteinGPTSalesCallSummariesPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830739,Einstein Discovery Analyst,Active,150,0,150,,Permission Set Licenses,SmartDataDiscoveryAnalystPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830740,Einstein Discovery User,Active,150,0,150,,Permission Set Licenses,SmartDataDiscoveryConsumerPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830741,Einstein GPT Article Recommendations for Conversations,Disabled,0,1,-1,,Permission Set Licenses,EinsteinARForConversationsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830742,Einstein GPT Metadata Studio,Active,50,0,50,,Permission Set Licenses,EinsteinGPTGroundingStructuredDataPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830743,Einstein GPT Sales Emails,Active,5,2,3,,Permission Set Licenses,EinsteinGPTSalesEmailsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830744,Einstein GPT Search Answers,Active,5,2,3,,Permission Set Licenses,EinsteinGPTSearchAnswersPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830745,Einstein GPT Service Replies,Active,5,1,4,,Permission Set Licenses,EinsteinGPTServiceRepliesPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830746,Einstein GPT Service Replies For Email,Active,5,1,4,,Permission Set Licenses,EinsteinGPTServiceRepliesForEmailPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830747,Einstein GPT Work Summaries,Active,5,1,4,,Permission Set Licenses,EinsteinGPTServiceSummarizationPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830748,Einstein Prompt Templates,Active,110,5,105,,Permission Set Licenses,EinsteinGPTPromptTemplatesPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830749,Einstein Sales Summaries,Active,5,2,3,,Permission Set Licenses,EinsteinGPTSalesSummariesPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830750,Einstein Service Email Assistant,Active,5,1,4,,Permission Set Licenses,EinsteinGPTServiceEmailAssistantPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830751,Enablement Lite,Active,15,0,15,,Permission Set Licenses,EnablementLitePsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830752,Enhanced Mobile App Security User,Active,15,1,14,,Permission Set Licenses,MobileAppSecurityUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830753,Event Monitoring Analytics Apps,Active,100,3,97,,Permission Set Licenses,InsightsAdminAnalyticsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830754,Field Service Dispatcher,Active,15,0,15,,Permission Set Licenses,FieldServiceDispatcherPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830755,Field Service Mobile,Active,15,0,15,,Permission Set Licenses,FieldServiceMobilePsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830756,Field Service Scheduling,Active,15,0,15,,Permission Set Licenses,FieldServiceSchedulingPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830757,Field Service Standard,Active,15,0,15,,Permission Set Licenses,FieldServiceStandardPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830758,Files Connect for on-premises external data sources,Active,10,0,10,,Permission Set Licenses,FilesConnectOnPremisesPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830759,Inbox,Active,5,0,5,,Permission Set Licenses,SalesforceIQInboxPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830760,Marketing Cloud,Active,1000,0,1000,,Permission Set Licenses,MarketingCloudPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830761,Marketing Copilot Campaign Actions,Active,1000,0,1000,,Permission Set Licenses,MarketingCopilotCampaignActionsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830762,Messaging User,Active,10,0,10,,Permission Set Licenses,LiveMessageUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830763,Mobile Offline App Plus User,Active,10,5,5,,Permission Set Licenses,MobileOfflineAppPlusUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830764,Orders Platform,Active,50,0,50,,Permission Set Licenses,ContractsOrdersProductsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830765,Partner Cloud Access,Active,20,0,20,,Permission Set Licenses,PartnerCloudAccessPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830766,Privacy Center User,Active,3010,10,3000,,Permission Set Licenses,privacycenter_PrivacyCenterUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830767,Remote Data Cloud,Active,200000,0,200000,,Permission Set Licenses,RemoteDataCloudPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830768,Sales Analytics Apps,Active,100,1,99,,Permission Set Licenses,InsightsSalesAnalyticsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830769,Sales Cloud Einstein,Active,100,0,100,,Permission Set Licenses,SalesCloudEinsteinPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830770,Sales Cloud Einstein for Partners,Active,1000000,0,1000000,,Permission Set Licenses,SalesCloudEinsteinPartnersPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830771,Sales Console User,Active,100,1,99,,Permission Set Licenses,SalesConsoleUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830772,Sales Engagement Basic,Active,100,0,100,,Permission Set Licenses,SalesEngagementBasicPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830773,Sales User,Active,50,0,50,,Permission Set Licenses,SalesUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830774,Sales Workspace User,Active,100,0,100,,Permission Set Licenses,SalesWorkspacePsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830775,Salesforce API Integration,Active,5,1,4,,Permission Set Licenses,SalesforceAPIIntegrationPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830776,Salesforce Archive,Active,1,1,0,,Permission Set Licenses,SalesforceArchivePsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830778,Service Analytics Apps,Active,100,1,99,,Permission Set Licenses,InsightsServiceAnalyticsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830779,Service User,Active,50,0,50,,Permission Set Licenses,ServiceUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830780,Shield Key Broker Admin User,Active,5,0,5,,Permission Set Licenses,ShieldKeyBrokerUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830781,Slack Service User,Active,110,0,110,,Permission Set Licenses,SlackServiceUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830782,SOS User,Active,50,0,50,,Permission Set Licenses,SosUserPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830783,Standard Einstein Activity Capture User,Active,100,0,100,,Permission Set Licenses,StandardEinsteinActivityCapturePsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830784,Standard Einstein Activity Capture User,Active,50,0,50,,Permission Set Licenses,StandardEinsteinActivityCapture2Psl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830785,Survey Creator User - 1 Seats,Active,50,1,49,,Permission Set Licenses,SurveyCreatorPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830786,Tableau Einstein Included App,Active,1000,0,1000,,Permission Set Licenses,TableauEinsteinIncludedAppPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830787,Trust Card Manager,Active,10000,0,10000,,Permission Set Licenses,TrustCardManagerPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830788,Work.com Rewards,Active,50,0,50,,Permission Set Licenses,WorkDotComRewardsPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830789,Your Account App: Identity User,Active,100,0,100,,Permission Set Licenses,SubscriptionManagementPsl,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830790,Apex Mobile User,Active,60,3,57,,Feature Licenses,MobileUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830791,Chat User,Active,50,7,43,,Feature Licenses,LiveAgentUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830792,Chatter Answers User,Active,50,2,48,,Feature Licenses,ChatterAnswersUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830793,Data.com User,Active,50,2,48,,Feature Licenses,JigsawProspectingUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830794,Flow User,Active,85,5,80,,Feature Licenses,InteractionUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830795,Knowledge User,Active,50,9,41,,Feature Licenses,KnowledgeUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830796,Marketing User,Active,1100,8,1092,,Feature Licenses,MarketingUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830797,Offline User,Active,100,4,96,,Feature Licenses,OfflineUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830798,Salesforce CRM Content User,Active,210,30,180,,Feature Licenses,SFContentUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830799,Service Cloud User,Active,100,9,91,,Feature Licenses,SupportUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830800,Site.com Contributor User,Active,50,3,47,,Feature Licenses,SiteforceContributorUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830801,Site.com Publisher User,Active,50,3,47,,Feature Licenses,SiteforcePublisherUser,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z
+830802,WDC User,Active,50,0,50,,Feature Licenses,WorkDotComUserFeature,2026-05-04T00:47:36.943Z,2026-05-04T00:47:36.943Z

@@ -2,3 +2,185 @@ Map<String,object> s = newsController.retriveNews();
 System.debug(s);
 
 System.debug(BigQuery3.getBQ());
+
+MBBatchFieldScanController controller = new MBBatchFieldScanController();
+controller.execute();
+
+List<FieldDefinition> fdlist = new List<FieldDefinition>(
+            [
+                SELECT entitydefinition.qualifiedapiname,SecurityClassification FROM FieldDefinition where entitydefinitionid='Product__c'
+            ]
+        );
+        System.debug(fdlist);
+
+List<String> led=new List<String>();
+for (entitydefinition ed: [select qualifiedapiname from entitydefinition]) {
+led.add(ed.qualifiedapiname);
+}
+system.debug(led);
+
+List<fielddefinition> fdef;
+fdef=[SELECT Id,DeveloperName,EntityDefinitionId,DurableId,Description,SecurityClassification,ComplianceGroup,EntityDefinition.QualifiedApiName FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName in :led AND Securityclassification != NULL];
+system.debug(fdef);
+
+List<String> strlist=new List<String>();
+List<entitydefinition> led = new List<entitydefinition>();
+led=[select qualifiedapiname from entitydefinition];
+MBEntityDefinitionIterator iterator=new MBEntityDefinitionIterator(led);
+while (iterator.hasNext()) {
+entitydefinition e = iterator.next();
+strlist.add (e.qualifiedapiname);
+}
+List<fielddefinition> fdef;
+fdef=[SELECT Id,DeveloperName,EntityDefinitionId,DurableId,Description,SecurityClassification,ComplianceGroup,EntityDefinition.QualifiedApiName FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName in :strlist AND Securityclassification != NULL order by entitydefinitionid];
+system.debug(fdef);
+
+List<String> strlist=new List<String>();
+List<entitydefinition> led = new List<entitydefinition>();
+led=[select qualifiedapiname from entitydefinition];
+for (entitydefinition ed: led){
+strlist.add(ed.qualifiedapiname);
+}
+List<MBFieldDefinition> fdef;
+fdef=[SELECT Id,DeveloperName,QualifiedApiname,EntityDefinitionId,DurableId,Description,SecurityClassification,ComplianceGroup,EntityDefinition.QualifiedApiName FROM FieldDefinition WHERE EntityDefinition.QualifiedApiName in ('Account','Contact','Lead') AND Securityclassification != NULL];
+System.debug(fdef);
+
+for (fielddefinition fd: fdef) {
+System.debug(fd.entitydefinition.qualifiedapiname+'.'+fd.qualifiedapiname+' =>'+fd.Securityclassification+ '=>'+fd.ComplianceGroup );
+}
+
+
+List<String>criteria=new List<String>();
+criteria.add('demo');
+System.debug(MBFieldDefinitionInvocableApex.getFieldSecurityAndCompliance(criteria));
+
+
+List<String>criteria=new List<String>();
+criteria.add('MBDevPRO');
+System.debug(MBSandboxProcessInvocableApex.getSandboxes(criteria));
+
+List<String>criteria=new List<String>();
+criteria.add('DEMODXUAT');
+System.debug(MBLimitInvocableApex.getLimits(criteria));
+
+List<String>criteria=new List<String>();
+criteria.add('DEMODXUAT');
+System.debug(MBSecurityHealthCheckInvocableApex.getScore(criteria));
+
+
+
+AccountContactInserter batchInstance = new AccountContactInserter();
+Database.executeBatch(batchInstance, 200); // Set the batch size (200 is a reasonable size for this task)
+
+
+toolingApiEndpoint=callout:ToolingRest?q=SELECT+Id,DeveloperName,QualifiedApiname,EntityDefinitionId,DurableId,Description,SecurityClassification,ComplianceGroup,EntityDefinition.QualifiedApiName+FROM+FieldDefinition+WHERE+EntityDefinition.QualifiedApiName+in+('Account','Contact','Lead')+where+SecurityClassification!=NULL+limit+5
+toolingApiEndpoint=callout:ToolingRest?q=SELECT+SandboxName,Description,LicenseType,CopyProgress,StartDate,EndDate,ActivatedDate,Status+from+SandboxProcess+where+SandboxName='MBDevPRO'+order+by+StartDate
+
+
+
+
+List<PersonalizedGuestExperiences.Request> l = new List<PersonalizedGuestExperiences.Request>();
+PersonalizedGuestExperiences.Request r = new PersonalizedGuestExperiences.Request();
+
+Contact c  = [select id,interest1__c,interest2__c,interest3__c from contact where id = '003d200000S6AKjAAN' limit 1];
+r.myContact=c;
+
+l.add(r);
+PersonalizedGuestExperiences.getSessions(l);
+
+
+SampleDataGenerator.generateData();
+
+
+
+list <CopilotEvents__dll> l ;
+= [select id from SELECT botId__c, chatbotSession__c, contextVariableInput_value__c, conversationDefinition__c, conversationDialog__c, conversationEventLogLevel__c, conversationEventLogType__c, conversationTurn__c, message__c, eventTimestamp__c FROM CopilotEvents__dlm  limit 10];
+system.debug(l);
+
+
+
+
+Date myDate = Date.newInstance(2024, 1, 11); // January 11, 2024
+Date myDate2 = Date.newInstance(2023, 12, 25); // December 12, 2023
+OB_Archiver.DateRange range = new OB_Archiver.dateRange('CreatedDate', myDate, myDate);
+OB_Archiver.DateRange range2 = new OB_Archiver.dateRange('CreatedDate', myDate2, myDate2);
+list<OB_Archiver.DateRange> ranges = new list<OB_Archiver.DateRange> {range, range2};
+List<OB_Archiver.SearchFilter> filters = new List<OB_Archiver.SearchFilter>();
+filters.add(new OB_Archiver.SearchFilter('Title', 'orange'));
+OB_Archiver.ArchiverAccessorResponse res = OB_Archiver.ArchiverAccessor.performArchiverGlobalSearch('ContentDocument', filters);
+OB_Archiver.archiverAccessorSearchResponse searchResponse = res.getSearchResponseMap();
+System.debug(searchResponse.records[0]);
+String s = JSON.serialize(searchResponse.records[0]);
+ContentDocument c= (ContentDocument) JSON.deserialise(s,ContentDocument);
+System.debug(c);
+
+delete [select id from HEALTHCHECKRISK__c];
+
+
+MBSecurityCenterHCRisks.getHCHighRisks('ToolingRest','00D2w00000NK4yO','eBikes','All');
+MBSecurityCenterHCRisks.getHCHighRisks('ToolingResteBikes2','00Dd2000008ye2w','eBikes2','All');
+MBSecurityCenterHCRisks.getHCHighRisks('ToolingRestDreamhouse','00D5j000008wzRs','Dreamhouse','All');
+MBSecurityCenterHCRisks.getHCHighRisks('ToolingResteCars','00D5j00000Ae9dn','MB-ECars','All');
+
+'ToolingResteCars',
+                '00D5j00000Ae9dn',
+                'MB-Cars',
+                'All'
+'ToolingResteBikes2',
+                '00D5j00000Ae9dn',
+                'All'
+
+
+
+    MBSecurityCenterSandbox.getSandboxes(
+                'ToolingRestDreamhouse',
+                '00D5j000008wzRs',
+                'MB DevOps',
+                'All'
+            );
+
+System.enqueueJob(new MBSecurityCenterDailySandboxFetcher());
+
+
+System.enqueueJob(new MBEBikeSharingFetcher());
+
+
+
+Record_Access_Setting__mdt config = Record_Access_Setting__mdt.getInstance(
+            'Default'
+        );
+        System.debug(config);
+
+Datetime now=DateTime.now();
+Datetime windowStart = now.addHours(-24);
+
+        // Query custom object for unique record IDs accessed by this user
+        Set<String> uniqueRecordIds = new Set<String>();
+
+        for (Record_Access_Log__c log : [
+            SELECT RecordId__c
+            FROM Record_Access_Log__c
+            AccessTime__c >= :windowStart
+        ]) {
+            uniqueRecordIds.add(log.RecordId__c);
+        }
+
+        System.debug(uniqueRecordIds.size());
+
+
+
+Datetime now = Datetime.now();
+Datetime windowStart = now.addHours(-24);
+
+// Query custom object for unique record IDs accessed in the last 24 hours
+Set<String> uniqueRecordIds = new Set<String>();
+
+for (Record_Access_Log__c log : [
+    SELECT RecordId__c
+    FROM Record_Access_Log__c
+    WHERE AccessTime__c >= :windowStart
+]) {
+    uniqueRecordIds.add(log.RecordId__c);
+}
+
+System.debug('unique records: '+uniqueRecordIds.size());

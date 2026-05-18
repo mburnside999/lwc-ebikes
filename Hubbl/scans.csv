@@ -1,0 +1,111 @@
+metadataName,metadataId,name,createdById,status,startDate,endDate,log,error,isBenchmark,version,hasErrors,fieldUsageQuerySize,createdAt,updatedAt
+11855,11855,eBikes,6937,Completed,2026-05-04T00:37:22.156Z,2026-05-04T00:49:08.744Z,"2026-05-04 00:41:28 🎬 Starting scan against: mburnside@dxdo2023.demo, scanner version 2.81.0
+2026-05-04 00:41:28 ✨ Starting Installed Package scan
+2026-05-04 00:41:32 ✅ Installed Package scan completed
+2026-05-04 00:41:32 ✨ Starting System Overview scan
+2026-05-04 00:41:33 ✅ System Overview scan completed
+2026-05-04 00:41:33 ✨ Starting ReleaseUpdate scan
+2026-05-04 00:41:33 ✅ ReleaseUpdate scan completed
+2026-05-04 00:41:33 ✨ Starting Security Health Check Risk scan
+2026-05-04 00:41:39 ✅ Security Health Check Risk scan completed
+2026-05-04 00:41:39 ✨ Starting Security Health Check scan
+2026-05-04 00:41:45 ✅ Security Health Check scan completed
+2026-05-04 00:41:45 ✨ Starting Items scan
+2026-05-04 00:41:56 ✅ Items scan completed
+2026-05-04 00:41:56 ✨ Starting Role scan
+2026-05-04 00:41:56 ✅ Role scan completed
+2026-05-04 00:41:56 ✨ Starting Role Hierarchy scan
+2026-05-04 00:41:56 ✅ Role Hierarchy scan completed
+2026-05-04 00:41:56 ✨ Starting Object scan
+2026-05-04 00:41:58 ✅ Object scan completed
+2026-05-04 00:41:58 ✨ Starting Atlas Object Reference scan
+2026-05-04 00:41:59 ✅ Atlas Object Reference scan completed
+2026-05-04 00:41:59 ✨ Starting Object Usage scan
+2026-05-04 00:42:28 ✅ Object Usage scan completed
+2026-05-04 00:42:28 ✨ Starting Object Last Used Date scan
+2026-05-04 00:43:47 ✅ Object Last Used Date scan completed
+2026-05-04 00:43:47 ✨ Starting ReportType scan
+2026-05-04 00:43:47 ✅ ReportType scan completed
+2026-05-04 00:43:47 ✨ Starting Report scan
+2026-05-04 00:43:48 ✅ Report scan completed
+2026-05-04 00:43:48 ✨ Starting ReportReference scan
+2026-05-04 00:43:49 ✅ ReportReference scan completed
+2026-05-04 00:43:49 ✨ Starting Sharing Rule scan
+2026-05-04 00:43:50 ✅ Sharing Rule scan completed
+2026-05-04 00:43:50 ✨ Starting Flow scan
+2026-05-04 00:43:50 ✅ Flow scan completed
+2026-05-04 00:43:50 ✨ Starting Approval Process scan
+2026-05-04 00:43:50 ✅ Approval Process scan completed
+2026-05-04 00:43:50 ✨ Starting Field scan
+2026-05-04 00:44:56 ✅ Field scan completed
+2026-05-04 00:44:56 ✨ Starting Field Usage scan
+2026-05-04 00:45:13 ✅ Field Usage scan completed
+2026-05-04 00:45:13 ✨ Starting Record Type scan
+2026-05-04 00:45:13 ✅ Record Type scan completed
+2026-05-04 00:45:13 ✨ Starting Code Count scan
+2026-05-04 00:45:14 ✅ Code Count scan completed
+2026-05-04 00:45:14 ✨ Starting Class Type scan
+2026-05-04 00:45:15 ✅ Class Type scan completed
+2026-05-04 00:45:15 ✨ Starting Aura and LWC Issue scan
+2026-05-04 00:45:44 ✅ Aura and LWC Issue scan completed
+2026-05-04 00:45:44 ✨ Starting Apex and Visualforce Issue scan
+2026-05-04 00:47:00 ✅ Apex and Visualforce Issue scan completed
+2026-05-04 00:47:00 ✨ Starting Trigger scan
+2026-05-04 00:47:01 ✅ Trigger scan completed
+2026-05-04 00:47:01 ✨ Starting Apex Class scan
+2026-05-04 00:47:03 ✅ Apex Class scan completed
+2026-05-04 00:47:03 ✨ Starting Visualforce Component scan
+2026-05-04 00:47:03 ✅ Visualforce Component scan completed
+2026-05-04 00:47:03 ✨ Starting Visualforce Page scan
+2026-05-04 00:47:03 ✅ Visualforce Page scan completed
+2026-05-04 00:47:03 ✨ Starting Aura Component scan
+2026-05-04 00:47:04 ✅ Aura Component scan completed
+2026-05-04 00:47:04 ✨ Starting Lightning Web Component scan
+2026-05-04 00:47:04 ✅ Lightning Web Component scan completed
+2026-05-04 00:47:04 ✨ Starting Workflow scan
+2026-05-04 00:47:04 ✅ Workflow scan completed
+2026-05-04 00:47:04 ✨ Starting Object Reference scan
+2026-05-04 00:47:05 ✅ Object Reference scan completed
+2026-05-04 00:47:05 ✨ Starting Org Limit scan
+2026-05-04 00:47:05 ✅ Org Limit scan completed
+2026-05-04 00:47:05 ✨ Starting Role Usage scan
+2026-05-04 00:47:05 ✅ Role Usage scan completed
+2026-05-04 00:47:05 ✨ Starting Profile scan
+2026-05-04 00:47:05 ✅ Profile scan completed
+2026-05-04 00:47:05 ✨ Starting Profile Usage scan
+2026-05-04 00:47:06 ✅ Profile Usage scan completed
+2026-05-04 00:47:06 ✨ Starting Permission Set scan
+2026-05-04 00:47:07 ✅ Permission Set scan completed
+2026-05-04 00:47:07 ✨ Starting Permission Set Usage scan
+2026-05-04 00:47:07 ✅ Permission Set Usage scan completed
+2026-05-04 00:47:07 ✨ Starting Connected App scan
+2026-05-04 00:47:35 ✅ Connected App scan completed
+2026-05-04 00:47:35 ✨ Starting Group scan
+2026-05-04 00:47:36 ✅ Group scan completed
+2026-05-04 00:47:36 ✨ Starting Global Value Set scan
+2026-05-04 00:47:36 ✅ Global Value Set scan completed
+2026-05-04 00:47:36 ✨ Starting Industries Settings scan
+2026-05-04 00:47:36 ✅ Industries Settings scan completed
+2026-05-04 00:47:36 ✨ Starting License Usage scan
+2026-05-04 00:47:37 ✅ License Usage scan completed
+2026-05-04 00:47:37 ✨ Starting Cloud Classification scan
+2026-05-04 00:47:37 ✅ Cloud Classification scan completed
+2026-05-04 00:47:37 ✨ Starting Login History scan
+2026-05-04 00:47:39 ✅ Login History scan completed
+2026-05-04 00:47:39 ✨ Starting Object Usage By User scan
+2026-05-04 00:48:22 ⚠️️ Object Usage By User scan completed with errors
+2026-05-04 00:48:22 ✨ Starting File Count scan
+2026-05-04 00:48:22 ✅ File Count scan completed
+2026-05-04 00:48:22 ✨ Starting Setup Url scan
+2026-05-04 00:49:00 ⚠️️ Setup Url scan completed with errors
+2026-05-04 00:49:00 ✨ Starting Scoring scan
+2026-05-04 00:49:07 ✅ Scoring scan completed
+2026-05-04 00:49:07 ✨ Starting Recommendation Count scan
+2026-05-04 00:49:07 ✅ Recommendation Count scan completed
+2026-05-04 00:49:07 ✨ Starting Complexity Score scan
+2026-05-04 00:49:07 ✅ Complexity Score scan completed
+2026-05-04 00:49:07 ✨ Starting Hubbl Score Scanner scan
+2026-05-04 00:49:08 ✅ Hubbl Score Scanner scan completed
+2026-05-04 00:49:08 ✨ Starting Scan Digest scan
+2026-05-04 00:49:08 ✅ Scan Digest scan completed
+2026-05-04 00:49:08 🏁 Scan completed",,true,2.81.0,true,,2026-05-04T00:29:30.121Z,2026-05-04T00:49:08.744Z

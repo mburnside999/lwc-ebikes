@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Passport_Number__c</fullName>
+    <businessOwnerUser>mburnside@dxdo2023.demo</businessOwnerUser>
+    <businessStatus>Active</businessStatus>
+    <complianceGroup>PII (Australian Privacy Principles)</complianceGroup>
+    <description>The contact&apos;s Passport Number, including any prefix</description>
+    <encryptionScheme>CaseInsensitiveDeterministicEncryption</encryptionScheme>
+    <externalId>false</externalId>
+    <label>Passport Number</label>
+    <length>20</length>
+    <required>false</required>
+    <securityClassification>Confidential</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

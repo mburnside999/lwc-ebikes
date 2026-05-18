@@ -1,0 +1,34 @@
+curl https://ebikes2.demo.my.salesforce.com/services/oauth2/token \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'client_id=3MVG9YFqzc_KnL.xLvH4E9iE1QnQq6FgcWeblVjMEpNI_8Cy7_vKQvuwRgrvZ8XVNz.ERi45E9P_3W3GfPdbS' \
+--data-urlencode 'client_secret='DF431A6D4B5AAF4A3C5C89DB9848127C4F634E0A72C23ACE930B65172538AFA5'
+
+
+
+curl https://ebikes2.demo.my.salesforce.com/services/oauth2/token --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'grant_type=client_credentials' --data-urlencode 'client_id="3MVG9YFqzc_KnL.xLvH4E9iE1QnQq6FgcWeblVjMEpNI_8Cy7_vKQvuwRgrvZ8XVNz.ERi45E9P_3W3GfPdbS"' --data-urlencode 'client_secret='DF431A6D4B5AAF4A3C5C89DB9848127C4F634E0A72C23ACE930B65172538AFA5'
+
+
+
+
+curl https://ebikes2.demo.my.salesforce.com/services/oauth2/token \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'grant_type=client_credentials' \
+--data-urlencode 'client_id=3MVG9YFqzc_KnL.xLvH4E9iE1QnQq6FgcWeblVjMEpNI_8Cy7_vKQvuwRgrvZ8XVNz.ERi45E9P_3W3GfPdbS' \
+--data-urlencode 'client_secret=DF431A6D4B5AAF4A3C5C89DB9848127C4F634E0A72C23ACE930B65172538AFA5'
+
+
+
+curl --location -X POST https://api.salesforce.com/einstein/ai-agent/v1/agents/0Xxd2000000lBeLCAU/sessions \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer eyJ0bmsiOiJjb3JlL3Byb2QvMDBEZDIwMDAwMDh5ZTJ3RUFBIiwidmVyIjoiMS4wIiwia2lkIjoiQ09SRV9BVEpXVC4wMERkMjAwMDAwOHllMncuMTc0OTYzMjE1OTI3NiIsInR0eSI6InNmZGMtY29yZS10b2tlbiIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJzY3AiOiJzZmFwX2FwaSBjaGF0Ym90X2FwaSBhcGkiLCJzdWIiOiJ1aWQ6MDA1ZDIwMDAwMDVLUzZ2QUFHIiwicm9sZXMiOltdLCJpc3MiOiJodHRwczovL2ViaWtlczIuZGVtby5teS5zYWxlc2ZvcmNlLmNvbSIsImNsaWVudF9pZCI6IjNNVkc5WUZxemNfS25MLnhMdkg0RTlpRTFRblFxNkZnY1dlYmxWak1FcE5JXzhDeTdfdktRdnV3Umdydlo4WFZOei5FUmk0NUU5UF8zVzNHZlBkYlMiLCJjZHBfdGVuYW50IjoiYTM2MC9wcm9kMTMvZDM5N2QyZjA4YzU0NDhiZmEwNGEyNzM0YzliMGY2NDEiLCJhdWQiOlsiaHR0cHM6Ly9lYmlrZXMyLmRlbW8ubXkuc2FsZXNmb3JjZS5jb20iLCJodHRwczovL2FwaS5zYWxlc2ZvcmNlLmNvbSJdLCJuYmYiOjE3NTQyNjUwMDQsIm10eSI6Im9hdXRoIiwic2ZhcF9yaCI6ImJvdC1zdmMtbGxtOmF3cy1wcm9kMTMtZXV3ZXN0Mi9laW5zdGVpbixib3Qtc3ZjLWxsbS9GbG93R3B0OmF3cy1wcm9kMy1ldWNlbnRyYWwxL2VpbnN0ZWluLGVpbnN0ZWluLWFpLWdhdGV3YXkvRWluc3RlaW5HUFQ6YXdzLXByb2QxMy1ldXdlc3QyL2VpbnN0ZWluLGVpbnN0ZWluLWFpLWdhdGV3YXkvRURDOmF3cy1wcm9kMTMtZXV3ZXN0Mi9laW5zdGVpbixtdnMvRURDOmF3cy1wcm9kMTMtZXV3ZXN0Mi9laW5zdGVpbixlaW5zdGVpbi10cmFuc2NyaWJlL0VpbnN0ZWluR1BUOmF3cy1wcm9kMTMtZXV3ZXN0Mi9laW5zdGVpbiIsInNmaSI6ImQ1M2ExYzU0ZjRmNDU0Zjg5YTdlZjc0MjExMTJmYTE4YWE2ODViZWRiNjgxNjBmNTZjZTVjYTU4MDZlOGQzZWMiLCJzZmFwX29wIjoiRWluc3RlaW5IYXdraW5nQzJDRW5hYmxlZCxFR3B0Rm9yRGV2c0F2YWlsYWJsZSxFaW5zdGVpbkdlbmVyYXRpdmVTZXJ2aWNlLFRhYmxlYXVNZXRyaWNCYXNpY3MiLCJoc2MiOmZhbHNlLCJjZHBfdXJsIjoiaHR0cHM6Ly9hMzYwLmNkcC5jZHAxLmF3cy1wcm9kMTMtZXV3ZXN0Mi5hd3Muc2ZkYy5jbCIsImV4cCI6MTc1NDI2NjgxOSwiaWF0IjoxNzU0MjY1MDE5fQ.qy4x1INlb-gwEhMrjvTILgidEuwj9ey5bm4lWvDG8XwBd1XT3VegTl4mhabNA_qFVYStMrkyDm7lW1eDOgD0BVw9Ffzu-wsfMJ-_CeGd0fEJjdQKkgVOfbHOghBGYq6FaXXLLeeWTa_vvz2P0qKiyVshSHOol0-D206VvpdRPd-ok60nJ4QBmrhWpUKzjdRNX8cvIxhBiihFYkVCZGdhtTY0kPGGGBqrS0KkqO6n4MgiaChqfS14Q4moSSYnmCRrHI3Ci1NS714mQT1dqlxjyQX9teDUpH9rjP_VV82tT1mu8fR_TRSZL8YQ6BOwrvTqF_Mos8Fq8gqjTKbzx-417w' \
+--data '{
+ "externalSessionKey": "{RANDOM_UUID}",
+ "instanceConfig": {
+   "endpoint": "https://ebikes2.demo.my.salesforce.com"
+ },
+ "streamingCapabilities": {
+   "chunkTypes": ["Text"]
+ },
+ "bypassUser": false
+}'

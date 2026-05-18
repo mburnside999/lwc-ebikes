@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>White</fullName>
+        <default>false</default>
+        <label>White</label>
+    </customValue>
+    <customValue>
+        <fullName>Red</fullName>
+        <default>false</default>
+        <label>Red</label>
+    </customValue>
+    <customValue>
+        <fullName>Blue</fullName>
+        <default>false</default>
+        <label>Blue</label>
+    </customValue>
+    <customValue>
+        <fullName>Green</fullName>
+        <default>false</default>
+        <label>Green</label>
+    </customValue>
+    <customValue>
+        <fullName>Black</fullName>
+        <default>false</default>
+        <label>Black</label>
+    </customValue>
+    <customValue>
+        <fullName>Silver</fullName>
+        <default>false</default>
+        <label>Silver</label>
+    </customValue>
+    <customValue>
+        <fullName>Orange</fullName>
+        <default>false</default>
+        <label>Orange</label>
+    </customValue>
+    <customValue>
+        <fullName>Yellow</fullName>
+        <default>false</default>
+        <label>Yellow</label>
+    </customValue>
+    <description>Standard color options for e-bike components (frame, handlebar, seat, waterbottle). Maintaining a single value set ensures consistency across all customizable parts.</description>
+    <masterLabel>Bike Colors</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

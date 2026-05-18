@@ -64,7 +64,7 @@ global class DataClassification implements TxnSecurity.EventCondition {
             FROM FieldDefinition
             WHERE
                 EntityDefinitionId = :entity
-                AND SecurityClassification != NULL
+                AND SecurityClassification = 'Confidential'
         ];
 
         List<String> ConfidentialFields = new List<String>();

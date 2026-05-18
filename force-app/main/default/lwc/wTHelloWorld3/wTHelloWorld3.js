@@ -1,10 +1,6 @@
-import { LightningElement,wire } from 'lwc';
-import sayHello from "@salesforce/apex/WTHelloWorld.sayHello";
+import { LightningElement, wire } from 'lwc';
+import sayHello from '@salesforce/apex/WTHelloWorld.sayHello';
 
 export default class WTHelloWorld1 extends LightningElement {
-    @wire(sayHello,{s:"Mike"}) nameVar;
-
-
-
-
+    @wire(sayHello, { s: 'Mike' }) nameVar;
 }

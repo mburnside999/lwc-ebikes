@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <activeVersion>1</activeVersion>
     <description>Test</description>
     <developerName>Generate_Knowledge</developerName>
     <masterLabel>Generate Knowledge</masterLabel>
     <templateVersions>
-        <content>Based on this call transcript, generate a knowledge article with a step by step guidance on how to solve this issue.
+        <content
+        >Based on this call transcript, generate a knowledge article with a step by step guidance on how to solve this issue.
 
 CSR: Thank you for calling Valiant Bank Customer Service. How can I assist you today?
 Alex: Hi, I&apos;m having trouble logging into the My Money Centre app. It keeps saying my credentials are invalid.

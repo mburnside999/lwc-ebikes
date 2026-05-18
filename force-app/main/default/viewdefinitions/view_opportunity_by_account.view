@@ -1,0 +1,50 @@
+description: "Find and View Opportunities by Account"
+schema:
+  properties:
+    title:
+      type: string
+      defaultValue: "Find and View Opportunities by Account"
+    recordId:
+      type: string
+      required: true
+dataproviders:
+  opportunity:
+    definition: "apex__DataProviderOpportunityLookup.getOpportunitiesByAccount"
+    properties:
+      accountId: "{!view.properties.recordId}"
+  opportunity_by_stage:
+    definition: "apex__DataProviderOpportunityLookup.getOpportunitiesByStage"
+    properties:
+      accountId: "{!view.properties.recordId}"
+components:
+  - definition: modal
+    properties:
+      title: "Select an Opportunity"
+      submitLabel: "View Opportunity"
+    events:
+      onsubmit:
+        definition: "apex__action__ActionDispatcherViewSelectedRecord"
+        properties:
+          objectApiName: "Opportunity"
+          recordId: "{!opportunity}"
+    components:
+    - definition: input
+      name: "all_opportunities"
+      properties:
+        label: "All Opportunities By Account"
+      components:
+        - definition: select
+          properties:
+            name: "select_opportunity"
+            placeholder: "Select an Opportunity"
+            options: "{!opportunity}"
+    - definition: input
+      name: "opp_by_stage"
+      properties:
+        label: "Opportunities by Stage"
+      components:
+        - definition: select
+          properties:
+            name: "select_opportunity_by_stage"
+            placeholder: "Select an Opportunity by Stage"
+            options: "{!opportunity_by_stage}"

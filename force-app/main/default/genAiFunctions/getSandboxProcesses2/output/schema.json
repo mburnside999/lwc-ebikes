@@ -1,0 +1,28 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "sandboxProcessCollection" : {
+      "title" : "sandboxProcessCollection",
+      "description" : "the payload returned from Apex",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "@apexClassType/c__MBSandboxProcess?isAuraEnabled=true"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "sandboxProcessOutputVar" : {
+      "title" : "sandboxProcessOutputVar",
+      "description" : "a formatted list of sandboxes on StartDate order",
+      "lightning:type" : "lightning__richTextType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

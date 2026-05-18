@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentforce Data Model - Agents, Topics, Instructions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 1400px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #032d60;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .legend {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #032d60;
+        }
+        .legend h3 {
+            margin-top: 0;
+            color: #032d60;
+        }
+        .legend-item {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        .legend-color {
+            width: 30px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 3px;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Agentforce Data Model</h1>
+        <p class="subtitle">Relationships between Agents, Topics, and Instructions</p>
+        
+        <svg viewBox="0 0 1300 900" xmlns="http://www.w3.org/2000/svg">
+            <!-- Definitions for gradients and shadows -->
+            <defs>
+                <linearGradient id="agentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#032d60;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#0176d3;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="plannerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#ea6a47;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#c23934;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="topicGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#2e844a;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#1d5b38;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="functionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#6b49d8;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#4b2cb1;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="instructionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f2a900;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#d88500;stop-opacity:1" />
+                </linearGradient>
+                <filter id="shadow">
+                    <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+                </filter>
+            </defs>
+
+            <!-- Title -->
+            <text x="650" y="30" text-anchor="middle" font-size="24" font-weight="bold" fill="#032d60">
+                Agentforce Architecture
+            </text>
+
+            <!-- Bot/Agent (Top Center) -->
+            <g filter="url(#shadow)">
+                <rect x="500" y="60" width="300" height="120" rx="10" fill="url(#agentGrad)"/>
+                <text x="650" y="95" text-anchor="middle" font-size="18" font-weight="bold" fill="white">
+                    Bot (Agent)
+                </text>
+                <text x="650" y="120" text-anchor="middle" font-size="12" fill="white">
+                    Einstein Copilot / Custom Agent
+                </text>
+                <text x="650" y="140" text-anchor="middle" font-size="11" fill="#e0e0e0">
+                    • Type: InternalCopilot
+                </text>
+                <text x="650" y="160" text-anchor="middle" font-size="11" fill="#e0e0e0">
+                    • Page Context Variables
+                </text>
+            </g>
+
+            <!-- GenAi Planner (Left Middle) -->
+            <g filter="url(#shadow)">
+                <rect x="100" y="250" width="280" height="150" rx="10" fill="url(#plannerGrad)"/>
+                <text x="240" y="285" text-anchor="middle" font-size="18" font-weight="bold" fill="white">
+                    GenAiPlanner
+                </text>
+                <text x="240" y="310" text-anchor="middle" font-size="12" fill="white">
+                    The "Brain" of the Agent
+                </text>
+                <text x="240" y="335" text-anchor="middle" font-size="11" fill="#ffe0e0">
+                    • plannerType: AiCopilot__ReAct
+                </text>
+                <text x="240" y="355" text-anchor="middle" font-size="11" fill="#ffe0e0">
+                    • Orchestrates Topics &amp; Actions
+                </text>
+                <text x="240" y="375" text-anchor="middle" font-size="11" fill="#ffe0e0">
+                    • Links to genAiFunctions/Plugins
+                </text>
+            </g>
+
+            <!-- Topics/Plugins (Right Middle) -->
+            <g filter="url(#shadow)">
+                <rect x="920" y="250" width="280" height="150" rx="10" fill="url(#topicGrad)"/>
+                <text x="1060" y="285" text-anchor="middle" font-size="18" font-weight="bold" fill="white">
+                    Topics (Plugins)
+                </text>
+                <text x="1060" y="310" text-anchor="middle" font-size="12" fill="white">
+                    What the Agent Can Do
+                </text>
+                <text x="1060" y="335" text-anchor="middle" font-size="11" fill="#e0ffe0">
+                    • genAiPlugins
+                </text>
+                <text x="1060" y="355" text-anchor="middle" font-size="11" fill="#e0ffe0">
+                    • Examples: GeneralCRM,
+                </text>
+                <text x="1060" y="375" text-anchor="middle" font-size="11" fill="#e0ffe0">
+                      ManageDeals, HR_Policies
+                </text>
+            </g>
+
+            <!-- GenAi Functions/Actions (Bottom Left) -->
+            <g filter="url(#shadow)">
+                <rect x="80" y="480" width="280" height="180" rx="10" fill="url(#functionGrad)"/>
+                <text x="220" y="515" text-anchor="middle" font-size="18" font-weight="bold" fill="white">
+                    GenAi Functions
+                </text>
+                <text x="220" y="540" text-anchor="middle" font-size="12" fill="white">
+                    Actions the Agent Executes
+                </text>
+                <text x="220" y="565" text-anchor="middle" font-size="11" fill="#e0e0ff">
+                    • genAiFunctions
+                </text>
+                <text x="220" y="585" text-anchor="middle" font-size="11" fill="#e0e0ff">
+                    • AnswerQuestionsWithKnowledge
+                </text>
+                <text x="220" y="605" text-anchor="middle" font-size="11" fill="#e0e0ff">
+                    • Custom Knowledge Actions
+                </text>
+                <text x="220" y="625" text-anchor="middle" font-size="11" fill="#e0e0ff">
+                    • Flow Actions, Apex, API calls
+                </text>
+            </g>
+
+            <!-- Instructions/Prompts (Bottom Center) -->
+            <g filter="url(#shadow)">
+                <rect x="420" y="480" width="280" height="180" rx="10" fill="url(#instructionGrad)"/>
+                <text x="560" y="515" text-anchor="middle" font-size="18" font-weight="bold" fill="white">
+                    Instructions
+                </text>
+                <text x="560" y="540" text-anchor="middle" font-size="12" fill="white">
+                    How the Agent Behaves
+                </text>
+                <text x="560" y="565" text-anchor="middle" font-size="11" fill="#fff8e0">
+                    • GenAiPromptTemplates
+                </text>
+                <text x="560" y="585" text-anchor="middle" font-size="11" fill="#fff8e0">
+                    • System Instructions
+                </text>
+                <text x="560" y="605" text-anchor="middle" font-size="11" fill="#fff8e0">
+                    • Personality, Tone, Guidelines
+                </text>
+                <text x="560" y="625" text-anchor="middle" font-size="11" fill="#fff8e0">
+                    • Input/Output Templates
+                </text>
+            </g>
+
+            <!-- Context Variables (Bottom Right) -->
+            <g filter="url(#shadow)">
+                <rect x="760" y="480" width="280" height="180" rx="10" fill="#546e7a"/>
+                <text x="900" y="515" text-anchor="middle" font-size="18" font-weight="bold" fill="white">
+                    Context Variables
+                </text>
+                <text x="900" y="540" text-anchor="middle" font-size="12" fill="white">
+                    Data Available to Agent
+                </text>
+                <text x="900" y="565" text-anchor="middle" font-size="11" fill="#e0e0e0">
+                    • Page Context (Record ID)
+                </text>
+                <text x="900" y="585" text-anchor="middle" font-size="11" fill="#e0e0e0">
+                    • Object API Name
+                </text>
+                <text x="900" y="605" text-anchor="middle" font-size="11" fill="#e0e0e0">
+                    • User Context
+                </text>
+                <text x="900" y="625" text-anchor="middle" font-size="11" fill="#e0e0e0">
+                    • Session Data
+                </text>
+            </g>
+
+            <!-- Knowledge Base (Far Right) -->
+            <g filter="url(#shadow)">
+                <rect x="1100" y="480" width="180" height="180" rx="10" fill="#37474f"/>
+                <text x="1190" y="515" text-anchor="middle" font-size="16" font-weight="bold" fill="white">
+                    Knowledge
+                </text>
+                <text x="1190" y="540" text-anchor="middle" font-size="11" fill="white">
+                    RAG Sources
+                </text>
+                <text x="1190" y="565" text-anchor="middle" font-size="10" fill="#e0e0e0">
+                    • Articles
+                </text>
+                <text x="1190" y="585" text-anchor="middle" font-size="10" fill="#e0e0e0">
+                    • Documents
+                </text>
+                <text x="1190" y="605" text-anchor="middle" font-size="10" fill="#e0e0e0">
+                    • Data Cloud
+                </text>
+                <text x="1190" y="625" text-anchor="middle" font-size="10" fill="#e0e0e0">
+                    • External APIs
+                </text>
+            </g>
+
+            <!-- Arrows/Relationships -->
+            <!-- Bot to Planner -->
+            <path d="M 550 180 L 280 250" stroke="#032d60" stroke-width="3" fill="none" marker-end="url(#arrowblue)"/>
+            <text x="380" y="205" font-size="11" fill="#032d60" font-weight="bold">uses</text>
+
+            <!-- Bot to Topics -->
+            <path d="M 750 180 L 1020 250" stroke="#032d60" stroke-width="3" fill="none" marker-end="url(#arrowblue)"/>
+            <text x="850" y="205" font-size="11" fill="#032d60" font-weight="bold">configured with</text>
+
+            <!-- Planner to Functions -->
+            <path d="M 240 400 L 240 480" stroke="#ea6a47" stroke-width="3" fill="none" marker-end="url(#arroworange)"/>
+            <text x="245" y="445" font-size="11" fill="#ea6a47" font-weight="bold">executes</text>
+
+            <!-- Planner to Instructions -->
+            <path d="M 380 370 L 500 480" stroke="#ea6a47" stroke-width="3" fill="none" marker-end="url(#arroworange)"/>
+            <text x="420" y="420" font-size="11" fill="#ea6a47" font-weight="bold">uses</text>
+
+            <!-- Topics to Functions -->
+            <path d="M 1000 400 L 360 530" stroke="#2e844a" stroke-width="3" fill="none" marker-end="url(#arrowgreen)" stroke-dasharray="5,5"/>
+            <text x="650" y="450" font-size="11" fill="#2e844a" font-weight="bold">contains</text>
+
+            <!-- Topics to Knowledge -->
+            <path d="M 1140 400 L 1190 480" stroke="#2e844a" stroke-width="3" fill="none" marker-end="url(#arrowgreen)"/>
+            <text x="1155" y="445" font-size="11" fill="#2e844a" font-weight="bold">retrieves</text>
+
+            <!-- Bot to Context -->
+            <path d="M 700 180 L 850 480" stroke="#032d60" stroke-width="2" fill="none" stroke-dasharray="5,5"/>
+            <text x="760" y="320" font-size="11" fill="#666" font-style="italic">provides</text>
+
+            <!-- Arrow markers -->
+            <defs>
+                <marker id="arrowblue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#032d60" />
+                </marker>
+                <marker id="arroworange" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#ea6a47" />
+                </marker>
+                <marker id="arrowgreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                    <path d="M0,0 L0,6 L9,3 z" fill="#2e844a" />
+                </marker>
+            </defs>
+
+            <!-- Metadata Objects Labels -->
+            <text x="650" y="750" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">
+                Metadata API Objects
+            </text>
+            <text x="200" y="780" font-size="12" fill="#555">
+                📄 Bot (.bot-meta.xml)
+            </text>
+            <text x="200" y="800" font-size="12" fill="#555">
+                📄 GenAiPlanner (.genAiPlanner-meta.xml)
+            </text>
+            <text x="200" y="820" font-size="12" fill="#555">
+                📄 GenAiFunction (.genAiFunction-meta.xml)
+            </text>
+            <text x="650" y="780" font-size="12" fill="#555">
+                📄 GenAiPlugin (Topic/Plugin metadata)
+            </text>
+            <text x="650" y="800" font-size="12" fill="#555">
+                📄 GenAiPromptTemplate (.genAiPromptTemplate-meta.xml)
+            </text>
+            <text x="650" y="820" font-size="12" fill="#555">
+                📄 BotVersion (.botVersion-meta.xml)
+            </text>
+
+            <!-- Flow visualization -->
+            <rect x="50" y="840" width="1200" height="40" rx="5" fill="#f0f4ff" stroke="#032d60" stroke-width="2"/>
+            <text x="650" y="865" text-anchor="middle" font-size="13" font-weight="bold" fill="#032d60">
+                💬 User Query → Bot → Planner → Topic Selection → Function Execution → Instructions Applied → Response Generated
+            </text>
+        </svg>
+
+        <div class="legend">
+            <h3>📋 Key Components</h3>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(to bottom, #032d60, #0176d3);"></div>
+                <span><strong>Bot (Agent):</strong> The main agent interface (Einstein Copilot or custom agent)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(to bottom, #ea6a47, #c23934);"></div>
+                <span><strong>GenAiPlanner:</strong> The AI orchestration engine using ReAct methodology</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(to bottom, #2e844a, #1d5b38);"></div>
+                <span><strong>Topics (Plugins):</strong> Functional capabilities grouped by domain (e.g., HR, CRM, Sales)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(to bottom, #6b49d8, #4b2cb1);"></div>
+                <span><strong>GenAi Functions:</strong> Executable actions like Flows, Apex methods, or API calls</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(to bottom, #f2a900, #d88500);"></div>
+                <span><strong>Instructions:</strong> Prompt templates that define agent personality, tone, and behavior</span>
+            </div>
+            
+            <h3 style="margin-top: 20px;">🔗 Relationships</h3>
+            <p><strong>1-to-1:</strong> Bot ↔ GenAiPlanner (Each agent has one planner)</p>
+            <p><strong>1-to-Many:</strong> GenAiPlanner → Topics (Planner can use multiple topics/plugins)</p>
+            <p><strong>1-to-Many:</strong> GenAiPlanner → Functions (Planner can execute multiple functions)</p>
+            <p><strong>Many-to-Many:</strong> Topics ↔ Functions (Topics contain multiple functions, functions can be in multiple topics)</p>
+            <p><strong>1-to-Many:</strong> Bot → Instructions (Multiple prompt templates guide agent behavior)</p>
+        </div>
+    </div>
+</body>
+</html>

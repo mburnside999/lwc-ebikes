@@ -1,0 +1,82 @@
+description: "View that creates a new contact record by triggering an apex action on view submission."
+dataproviders:
+  selected_account_option:
+    definition: 'apex__AccountLookupDataProvider.getAccountsByName'
+    properties:
+      value: '{!view.properties.account_lookup}'
+components:
+  - definition: modal
+    properties:
+      title: "Create Contact"
+      submitLabel: "Create"
+    events:
+      onsubmit:
+        # definition maps to 'ActionDispatcherSubmitRecord' apex class implementing Slack.ActionDispatcher
+        definition: "apex__action__ActionDispatcherSubmitRecord"
+        properties:
+          objectApiName: "Contact"
+    components:
+      - definition: input
+        properties:
+          label: "First Name"
+          required: true
+        components:
+          - definition: textInput
+            properties:
+              name: "FirstName"
+              placeholder: "First Name"
+      - definition: input
+        properties:
+          label: "Last Name"
+          required: true
+        components:
+          - definition: textInput
+            properties:
+              name: "LastName"
+              placeholder: "Last Name"
+      - definition: input
+        properties:
+          label: "Phone"
+          required: true
+        components:
+          - definition: textInput
+            properties:
+              name: "Phone"
+              placeholder: "(555) 555-5555"
+      - definition: input
+        properties:
+          label: "Email"
+          required: true
+        components:
+          - definition: textInput
+            properties:
+              name: "Email"
+              placeholder: "name@example.com"
+      - definition: input
+        name: "account_lookup"
+        properties:
+          label: 'Account'
+        components:
+          - definition: externalSelect
+            properties:
+              value: '{!selected_account_option}'    
+      - definition: section
+        properties:
+          text:
+            type: "mrkdwn"
+            text: "*Account*"
+      - definition: actions
+        name: "external_select_accounts"
+        components:
+          - definition: button
+            properties:
+              label: "Create Account"
+              style: "primary"
+              name: "create_account"
+            events:
+              onclick:
+                # definition maps to 'ActionDispatcherCreateRecord' apex class implementing Slack.ActionDispatcher
+                definition: "apex__action__ActionDispatcherCreateRecord"
+                properties:
+                  objectApiName: "Account"
+                  pushModal: true

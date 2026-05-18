@@ -1,0 +1,14 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "knowledgeSummary" : {
+      "title" : "__MISSING LABEL__ PropertyFile - val knowledgeSummary not found in section InvocableKnowledgeSearch",
+      "description" : "__MISSING LABEL__ PropertyFile - val param_knowledgeSummary not found in section InvocableKnowledgeSearch",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

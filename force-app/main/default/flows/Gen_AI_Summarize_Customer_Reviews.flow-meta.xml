@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionCalls>
         <name>Parse_JSON_Response</name>
@@ -8,20 +8,17 @@
         <actionName>AIGeneratedSummary</actionName>
         <actionType>apex</actionType>
         <connector>
-            <targetReference
-            >Update_Product_with_AI_Generated_Customer_Summary</targetReference>
+            <targetReference>Update_Product_with_AI_Generated_Customer_Summary</targetReference>
         </connector>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
         <inputParameters>
             <name>input</name>
             <value>
-                <elementReference
-                >Summarize_Customer_Reviews.promptResponse</elementReference>
+                <elementReference>Summarize_Customer_Reviews.promptResponse</elementReference>
             </value>
         </inputParameters>
         <nameSegment>AIGeneratedSummary</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <actionCalls>
         <name>Summarize_Customer_Reviews</name>
@@ -42,14 +39,12 @@
         </inputParameters>
         <nameSegment>Summarize_Customer_Reviews</nameSegment>
         <storeOutputAutomatically>true</storeOutputAutomatically>
-        <versionSegment>1</versionSegment>
     </actionCalls>
     <apiVersion>60.0</apiVersion>
-    <description
-    >This flows summarizes customer feedback using a prompt template</description>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <description>Triggered automatically when a new Reviews__c record is created. The flow looks up the related Product__c (e-bike) record, invokes the Summarize_Customer_Reviews Einstein prompt template to generate an AI summary of customer reviews for that product, parses the JSON response via the AIGeneratedSummary Apex class, and writes the results back to the product record — populating AI_Generated_Customer_Feedback__c with the review summary and AI_Generated_Sentiment__c with the overall sentiment (positive/negative/neutral).</description>
     <environments>Default</environments>
-    <interviewLabel
-    >Gen AI: Summarize Customer Reviews {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel>Gen AI: Summarize Customer Reviews {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Gen AI: Summarize Customer Reviews</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -75,8 +70,7 @@
         <label>Get Bike Record</label>
         <locationX>176</locationX>
         <locationY>323</locationY>
-        <assignNullValuesIfNoRecordsFound
-        >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Summarize_Customer_Reviews</targetReference>
         </connector>
@@ -94,8 +88,7 @@
     </recordLookups>
     <recordUpdates>
         <name>Update_Product_with_AI_Generated_Customer_Summary</name>
-        <label
-        >Update Product with AI Generated Summary of Customer Reviews</label>
+        <label>Update Product with AI Generated Summary of Customer Reviews</label>
         <locationX>176</locationX>
         <locationY>647</locationY>
         <filterLogic>and</filterLogic>
@@ -109,15 +102,13 @@
         <inputAssignments>
             <field>AI_Generated_Customer_Feedback__c</field>
             <value>
-                <elementReference
-                >Parse_JSON_Response.AIGeneratedFeedback</elementReference>
+                <elementReference>Parse_JSON_Response.AIGeneratedFeedback</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>AI_Generated_Sentiment__c</field>
             <value>
-                <elementReference
-                >Parse_JSON_Response.AIGeneratedSentiment</elementReference>
+                <elementReference>Parse_JSON_Response.AIGeneratedSentiment</elementReference>
             </value>
         </inputAssignments>
         <object>Product__c</object>

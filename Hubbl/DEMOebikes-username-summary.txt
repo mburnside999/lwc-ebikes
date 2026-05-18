@@ -1,0 +1,18 @@
+DEMOebikes.csv - Username Summary
+Generated: 2026-05-06
+
+Username,Total Events,Success,Non-Success,Top Applications
+cloud@00d2w00000nk4yoeat,110192,110192,0,"SecurityHub (66871); CRM Connector for Customer 360 Audiences (41849); AI Platform Auth (967)"
+mburnside@dxdo2023.demo,16697,16608,89,"Backup_and_Restore (7135); Slack (3036); ArchiveAuCa-Prod-2023-1 (1484)"
+integration@00d2w00000nk4yoeat.com,6507,6507,0,"Insights (6507)"
+nadim.diaz@ebikes.com,3670,3667,3,"NDRTEMSplunk (2010); NDEMSentinel2 (1542); ND_SecurityMetrics (40)"
+mip@dxdo2023.demo,680,0,680,"Q_Passport (680)"
+philipdu@ebikes.demo,652,499,153,"Q_Passport (482); Rapid7 (144); Browser (24)"
+quinton@dxdo2023.demo,403,0,403,"Q_Passport (403)"
+msmith.oqh9djlxq5gk@dxdo2023.demo,376,0,376,"Q_Passport (376)"
+bbachovski+ebikes@salesforce.com,140,137,3,"Browser (52); Salesforce CLI (48); Salesforce for Android (31)"
+amercer@ebikesdemo.com,102,88,14,"Browser (49); PreferenceDemoApp (47); MB_Postman_App (6)"
+glenda.thomson@ebikes.demo,66,60,6,"Browser (54); Salesforce CLI (8); Salesforce for iOS (3)"
+eschweitzer@ebikes.com,35,26,9,"Browser (35)"
+ldasilva@ebikes.com,21,19,2,"Browser (21)"
+integrationuser@ebikes1.com,1,1,0,"Browser (1)"

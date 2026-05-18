@@ -1,0 +1,11 @@
+label,id,itemId,name,apiName,description,caseAccessLevel,contactAccessLevel,mayForecastManagerShare,opportunityAccessLevel,parentRole,parentRoleId,count,createdAt,updatedAt
+CEO,15737144,355257399,CEO,CEO,,Edit,Edit,false,Edit,,,6,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.751Z
+Channel Sales,15737145,355257400,Channel Sales,Channel_Sales,,Edit,Edit,false,Edit,Sales,15737146,0,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.754Z
+Sales,15737146,355257401,Sales,Sales,,Edit,Edit,false,Edit,CEO,15737144,4,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.758Z
+Service,15737147,355257402,Service,Service,,Edit,Edit,false,Read,CEO,15737144,3,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.761Z
+Sustainable Audio* Partner Executive,15737148,355257403,Sustainable Audio* Partner Executive,SustainableAudioPartnerExecutive,Sustainable Audio* Partner Executive,Edit,Edit,false,Read,CEO,15737144,0,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.764Z
+Sustainable Audio* Partner Manager,15737149,355257404,Sustainable Audio* Partner Manager,SustainableAudioPartnerManager,Sustainable Audio* Partner Manager,Edit,Edit,false,Read,SustainableAudioPartnerExecutive,15737148,0,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.767Z
+Sustainable Audio* Partner User,15737150,355257405,Sustainable Audio* Partner User,SustainableAudioPartnerUser,Sustainable Audio* Partner User,Edit,Edit,false,Read,SustainableAudioPartnerManager,15737149,1,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.770Z
+United Partners* Customer Executive,15737151,355257406,United Partners* Customer Executive,UnitedWaveCustomerExecutive,United Partners* Customer Executive,Edit,Edit,false,Read,CEO,15737144,0,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.773Z
+United Partners* Customer Manager,15737152,355257407,United Partners* Customer Manager,UnitedWaveCustomerManager,United Partners* Customer Manager,Edit,Edit,false,Read,UnitedWaveCustomerExecutive,15737151,0,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.777Z
+United Partners* Customer User,15737153,355257408,United Partners* Customer User,UnitedWaveCustomerUser,United Partners* Customer User,Edit,Edit,false,Read,UnitedWaveCustomerManager,15737152,0,2026-05-04T00:41:56.124Z,2026-05-04T00:47:05.780Z

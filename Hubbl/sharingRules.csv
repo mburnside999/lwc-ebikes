@@ -1,0 +1,3 @@
+id,itemId,name,objectName,type,accessLevel,sharedWith,criteria,sobjectId,createdAt,updatedAt
+551799,355257432,GuestShare,Account,Guest Rule,Read,Guestuser: preferencedemo,(Account: Name contains Audio),6220806,2026-05-04T00:43:50.084Z,2026-05-04T00:43:50.084Z
+551800,355257677,Payment Sharing Rule,Payment__c,Owner Based Rule,Read,Allinternalusers,Group: eBikes_Admins,6221070,2026-05-04T00:43:50.084Z,2026-05-04T00:43:50.084Z

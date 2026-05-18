@@ -1,0 +1,14 @@
+{
+  "required" : [ "Input:inputVar" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "Input:inputVar" : {
+      "title" : "inputVar",
+      "description" : "placeholder",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

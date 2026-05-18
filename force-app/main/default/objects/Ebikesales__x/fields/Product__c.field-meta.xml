@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalDeveloperName>product</externalDeveloperName>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isNameField>false</isNameField>
+    <isSortingDisabled>false</isSortingDisabled>
+    <label>Product</label>
+    <length>128</length>
+    <referenceTargetField>Product__c.ProductCode__c</referenceTargetField>
+    <referenceTo>Product__c</referenceTo>
+    <relationshipLabel>eBike Athena Sales</relationshipLabel>
+    <relationshipName>eBike_Athena_Sales</relationshipName>
+    <type>IndirectLookup</type>
+</CustomField>

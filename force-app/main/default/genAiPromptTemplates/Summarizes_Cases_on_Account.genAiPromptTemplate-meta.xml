@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
     <activeVersion>1</activeVersion>
     <description>Generate a summary of open cases for an account</description>
@@ -7,7 +7,8 @@
     <relatedEntity>Account</relatedEntity>
     <relatedField>Account.Open_Case_Summary__c</relatedField>
     <templateVersions>
-        <content>You’re a support representative, and you need to create a short summary of all open cases for account {!$Input:Account.Name} no longer than 500 characters. 
+        <content
+        >You’re a support representative, and you need to create a short summary of all open cases for account {!$Input:Account.Name} no longer than 500 characters. 
 
 Summarize the open cases in one paragraph no longer than 500 characters. 
 
@@ -39,7 +40,8 @@ Use the following information to write the summary: 
         <versionNumber>1</versionNumber>
     </templateVersions>
     <templateVersions>
-        <content>You’re a support representative, and you need to create a short summary of all open cases for account {!$Input:Account.Name} no longer than 500 characters. 
+        <content
+        >You’re a support representative, and you need to create a short summary of all open cases for account {!$Input:Account.Name} no longer than 500 characters. 
 
 Summarize the open cases in one paragraph no longer than 500 characters. 
 

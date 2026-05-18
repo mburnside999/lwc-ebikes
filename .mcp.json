@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "my-server": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "/Users/mburnside/MBDEV/MBPYTHONDEV/MCP/mcp_server_stdio.py"
+      ],
+      "env": {}
+    },
+    "Salesforce DX": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@salesforce/mcp",
+        "--orgs", "DEFAULT_TARGET_ORG",
+        "--toolsets", "orgs,metadata,data,users",
+        "--tools", "run_apex_test",
+        "--allow-non-ga-tools"
+      ]
+    },
+    "Salesforce Hosted MCP": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://api.salesforce.com/platform/mcp/v1/custom/MBMCPServer",
+        "8080",
+        "--static-oauth-client-info",
+        "{\"client_id\":\"3MVG9n_HvETGhr3A12ndHy2N5WgpCX_e7tTG8j5WXMDRKlCGwdTPC7T9ttGKvcHc8miVEdPfOLyEoZ775OGXu\",\"client_secret\":\"\"}"
+      ]
+    }
+  }
+}
